@@ -1,6 +1,8 @@
 require_relative "00_tree_node.rb"
-
+require 'byebug'
 class KnightPathFinder
+    attr_reader :root_node
+    
     def initialize(pos)
         @root_node = PolyTreeNode.new(pos)
         @considered_positions = [pos]
@@ -15,20 +17,13 @@ class KnightPathFinder
                 added_positions << pos
             end
         end
+        #debugger
         return added_positions
     end
 
     def self.valid_moves(pos)
         new_array = []
         i, j = pos
-        # new_array << [i+2, j+1]
-        # new_array << [i-2, j-1]
-        # new_array << [i+2, j-1]
-        # new_array << [i-2, j+1]
-        # new_array << [i+1, j+2]
-        # new_array << [i-1, j-2]
-        # new_array << [i+1, j-2]
-        # new_array << [i-1, j+2]
 
         deltas = [[-2, -1], [-2, +1], [+2, -1], [+2, +1], [-1, -2], [-1, +2], [+1, -2], [+1, +2]]
         deltas.each do |subArray|
@@ -41,12 +36,37 @@ class KnightPathFinder
         return new_array
     end
 
-        
+    def build_move_tree
+        queue = [@root_node]
+
+        while queue.length > 0
+            first_node = queue.shift
+            new_move_positions(first_node.value).each do |i| 
+                new_node = PolyTreeNode.new(i)
+                new_node.parent = first_node
+                first_node.add_child(new_node)
+                queue << new_node
+                test_arr << new_node.value
+            end
+        end
+    end
+
+    #Start with a pos
+    #Implement in breadth first manner
+    #Take first position in queue
+    #Get all possible new positions
+    #Build polytreenodes out of all
+    #Add to queue
+
+    # def bfs(value)
+    #     queue = [self]
+    #     while queue.length > 0
+    #         first_node = queue.shift
+    #         return first_node if first_node.value == value
+    #         queue += first_node.children
+    #     end
+    # end
 end
-
-
-p kpf = KnightPathFinder.new([4, 4])
-p kpf.new_move_positions([4,4])
 
 
 
