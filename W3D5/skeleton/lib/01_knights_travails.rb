@@ -46,28 +46,39 @@ class KnightPathFinder
                 new_node.parent = first_node
                 first_node.add_child(new_node)
                 queue << new_node
-                test_arr << new_node.value
             end
         end
     end
 
-    #Start with a pos
-    #Implement in breadth first manner
-    #Take first position in queue
-    #Get all possible new positions
-    #Build polytreenodes out of all
-    #Add to queue
+    def find_path(end_pos)
+        end_node = self.root_node.dfs(end_pos)
+        trace_path_back(end_node)
+    end
 
-    # def bfs(value)
-    #     queue = [self]
-    #     while queue.length > 0
-    #         first_node = queue.shift
-    #         return first_node if first_node.value == value
-    #         queue += first_node.children
+    def trace_path_back(end_node)
+        new_arr = []
+        ptr_node = end_node
+        while ptr_node.parent != nil
+            new_arr.unshift(ptr_node.value)
+            ptr_node = ptr_node.parent
+        end
+        new_arr.unshift(@root_node.value)
+        new_arr
+    end
+
+    
+    # def dfs(value)
+    #     return self if self.children.empty? && self.value == value
+    #     return self if self.value == value
+    #     # return nil if self.children.empty? && self.value != value
+    #     self.children.each do |child_node|
+    #         child = child_node.dfs(value)
+    #         # return child_node if child_node.value == value
+    #         return child if !child.nil?
     #     end
+    #     nil
     # end
 end
-
 
 
 
