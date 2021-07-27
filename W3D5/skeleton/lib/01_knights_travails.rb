@@ -1,6 +1,8 @@
 require_relative "00_tree_node.rb"
-
+require 'byebug'
 class KnightPathFinder
+    attr_reader :root_node
+    
     def initialize(pos)
         @root_node = PolyTreeNode.new(pos)
         @considered_positions = [pos]
@@ -15,20 +17,13 @@ class KnightPathFinder
                 added_positions << pos
             end
         end
+        #debugger
         return added_positions
     end
 
     def self.valid_moves(pos)
         new_array = []
         i, j = pos
-        # new_array << [i+2, j+1]
-        # new_array << [i-2, j-1]
-        # new_array << [i+2, j-1]
-        # new_array << [i-2, j+1]
-        # new_array << [i+1, j+2]
-        # new_array << [i-1, j-2]
-        # new_array << [i+1, j-2]
-        # new_array << [i-1, j+2]
 
         deltas = [[-2, -1], [-2, +1], [+2, -1], [+2, +1], [-1, -2], [-1, +2], [+1, -2], [+1, +2]]
         deltas.each do |subArray|
@@ -41,13 +36,49 @@ class KnightPathFinder
         return new_array
     end
 
-        
+    def build_move_tree
+        queue = [@root_node]
+
+        while queue.length > 0
+            first_node = queue.shift
+            new_move_positions(first_node.value).each do |i| 
+                new_node = PolyTreeNode.new(i)
+                new_node.parent = first_node
+                first_node.add_child(new_node)
+                queue << new_node
+            end
+        end
+    end
+
+    def find_path(end_pos)
+        end_node = self.root_node.dfs(end_pos)
+        trace_path_back(end_node)
+    end
+
+    def trace_path_back(end_node)
+        new_arr = []
+        ptr_node = end_node
+        while ptr_node.parent != nil
+            new_arr.unshift(ptr_node.value)
+            ptr_node = ptr_node.parent
+        end
+        new_arr.unshift(@root_node.value)
+        new_arr
+    end
+
+    
+    # def dfs(value)
+    #     return self if self.children.empty? && self.value == value
+    #     return self if self.value == value
+    #     # return nil if self.children.empty? && self.value != value
+    #     self.children.each do |child_node|
+    #         child = child_node.dfs(value)
+    #         # return child_node if child_node.value == value
+    #         return child if !child.nil?
+    #     end
+    #     nil
+    # end
 end
-
-
-p kpf = KnightPathFinder.new([4, 4])
-p kpf.new_move_positions([4,4])
-
 
 
 
