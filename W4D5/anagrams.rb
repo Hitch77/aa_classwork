@@ -46,8 +46,5 @@ def fifth_anagram?(anag1, anag2)
   h1.all? {|k, v| v % 2 == 0} # n > m
 end
 
-
-
-
 p fifth_anagram?("elvis", "lives")    #=> true
 p fifth_anagram?("gizmo", "sally")    #=> false
