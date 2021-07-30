@@ -68,3 +68,28 @@ class MyStack
     @store.empty?
   end
 end
+
+class StackQueue
+
+  def initialize
+    @store1 = MyStack.new
+    @store2 = MyStack.new
+  end
+
+  def size
+    @store.size
+  end
+
+  def empty?
+    @store.empty?
+  end
+
+  def enqueue
+    @store.push
+  end
+
+  def dequeue
+    @store.pop
+  end
+
+end
