@@ -4,18 +4,35 @@ end
 
 class Array
   def hash
+    return 0 if self.empty?
+    result = length + self[0] - self[-1]
+    self.each do |ele|
+        result *= ele
+    end
+    result
   end
 end
 
 class String
   def hash
+    result = 1
+    self.each_char do |char|
+        result *= char.ord
+    end
+    result + self[-1].ord
   end
 end
 
+
+
 class Hash
-  # This returns 0 because rspec will break if it returns nil
-  # Make sure to implement an actual Hash#hash method
+
   def hash
-    0
+    result = 1
+    
+    self.each do |k, v|
+        result * (k.hash + v.hash)
+    end
+    result + self.length
   end
 end
