@@ -1,4 +1,8 @@
 class SessionsController < ApplicationController
+
+    before_action :require_logged_out, only: [:new, :create]
+    before_action :require_logged_in, only: [:destroy]
+
     def new
         @user = User.new
         render :new
@@ -7,8 +11,7 @@ class SessionsController < ApplicationController
     def create
         @user = User.find_by_credentials(params[:user][:user_name], params[:user][:password])
         if @user
-            @user.reset_session_token!
-            @user.save!
+            login(@user)
             redirect_to cats_url
         else
             render :new
@@ -16,6 +19,7 @@ class SessionsController < ApplicationController
     end
 
     def destroy
-        se
+        logout!
+        redirect_to new_session_url
     end
 end

@@ -9,6 +9,22 @@
   </head>
 
   <body>
+    <header>
+      <h1> Welcome to 99 Cats!</h1>
+    </header>
+  
+    <% if current_user %>
+      <h3> Welcome, <%= current_user.user_name %>! <h3>
+      <form action="<%= session_url %>" method='post'>
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" value="Logout">
+      </form>
+    <%else%>
+      <a href="<%= new_user_url %>">Sign Up</a>
+      <br>
+      <a href="<%= new_session_url %>">Login</a>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
