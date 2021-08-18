@@ -1,0 +1,20 @@
+<h1> Log in </h1>
+<form action ="<%= session_url %>" method = "post">
+
+    <label for="user_email"> Email </label>
+    <input type = "text" 
+    name = "user[email]" 
+    id="user_email" 
+    value = "<%=@user.email%>">
+
+    <label for = "user_password"> Password </label>
+    <input type = "password" 
+    name = "user[password]" 
+    id = "user_password" 
+    value = "<%=@user.password%>">
+
+    <input type = "submit">
+</form> 
+
+
+

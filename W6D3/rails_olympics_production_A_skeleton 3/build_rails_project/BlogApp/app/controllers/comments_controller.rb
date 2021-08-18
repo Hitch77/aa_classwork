@@ -2,11 +2,17 @@ class CommentsController < ApplicationController
     def create
         comment = Comment.new(comment_params)
         if comment.save
-            redirect_to controller: 'blogs', action: 'show', id: blog_id
+            redirect_to blog_url(comment.blog_id)
         else
-            render :show
+            redirect_to blog_url(comment.blog_id)
         end
+    end
 
+    def destroy
+        comment = Comment.find_by(id: params[:id])
+        if comment.delete
+            redirect_to blog_url(comment.blog_id)
+        end 
     end
 
     def comment_params
