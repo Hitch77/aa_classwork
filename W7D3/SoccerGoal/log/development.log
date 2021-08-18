@@ -44,3 +44,7 @@ Migrating to CreateUsers (20210818210019)
   [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "S3nfq-np7IAtyKWWEtNNew"], ["LIMIT", 1]]
   [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "username"], ["password_digest", "$2a$12$zpL/8JkF3VSuqGdt9q9Jl.kXQyT5k5MZ.Qixb57pTt6ze/bjPINjG"], ["session_token", "S3nfq-np7IAtyKWWEtNNew"], ["created_at", "2021-08-18 21:57:06.919881"], ["updated_at", "2021-08-18 21:57:06.919881"]]
   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (168.6ms)[0m  [1m[35mCREATE DATABASE "Goal_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (61.5ms)[0m  [1m[35mCREATE DATABASE "Goal_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
