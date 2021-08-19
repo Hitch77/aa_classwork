@@ -1,0 +1,47 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.left-nav > ul,
+.right-nav > ul {
+  align-items: center;
+  display: flex;
+}
+
+.left-nav {
+
+  > ul {
+    > li {
+      margin-right: 30px;
+    }
+  }
+
+  span {
+
+  }
+}
+
+.right-nav  {
+
+  > ul {
+
+    > li {
+      margin-right: 3px;
+    }
+
+    > li:last-of-type {
+  
+    }
+  }
+  
+  i {
+
+  }
+}
+
+.left-nav > ul > li:hover,
+.right-nav > ul > li:last-of-type:hover {
+
+}
