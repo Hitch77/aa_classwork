@@ -2293,3 +2293,1902 @@ Started GET "/assets/application.self-f9d5fae6366423527275c46084a0e042f169a64836
 Started GET "/assets/application.self-f9d5fae6366423527275c46084a0e042f169a648369073c858f150fa4d0c68a4.css?body=1&livereload=1629412262372&livereload=1629410863327&livereload=1629411076256&livereload=1629412241261" for ::1 at 2021-08-19 18:31:02 -0400
 Started GET "/assets/application.self-f9d5fae6366423527275c46084a0e042f169a648369073c858f150fa4d0c68a4.css?body=1&livereload=1629412298538&livereload=1629410863327&livereload=1629411076256&livereload=1629412241261" for ::1 at 2021-08-19 18:31:38 -0400
 Started GET "/assets/application.self-f9d5fae6366423527275c46084a0e042f169a648369073c858f150fa4d0c68a4.css?body=1&livereload=1629412298536&livereload=1629410863327&livereload=1629411076256&livereload=1629412241261" for ::1 at 2021-08-19 18:31:38 -0400
+Started GET "/users/new" for ::1 at 2021-08-19 16:10:18 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/jasonkim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+  
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+rack-livereload (0.3.17) lib/rack/livereload.rb:23:in `_call'
+rack-livereload (0.3.17) lib/rack/livereload.rb:14:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-08-19 16:10:21 -0700
+  Rendering /Users/jasonkim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/jasonkim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jasonkim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /Users/jasonkim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [1 times] (28.7ms)
+  Rendered /Users/jasonkim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (51.6ms)
+  Rendering /Users/jasonkim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jasonkim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (16.2ms)
+  Rendered /Users/jasonkim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (824.3ms)
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (2.1ms)
+  Rendered shared/_sections_nav.html.erb (0.3ms)
+  Rendered shared/_search_modal.html.erb (2.7ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (256.3ms)
+Completed 200 OK in 5069ms (Views: 5062.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1" for ::1 at 2021-08-19 16:10:29 -0700
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-08-19 16:10:29 -0700
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-08-19 16:10:29 -0700
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-08-19 16:10:29 -0700
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-08-19 16:10:29 -0700
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-08-19 16:10:30 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415113327" for ::1 at 2021-08-19 16:18:33 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415113345" for ::1 at 2021-08-19 16:18:33 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415116155" for ::1 at 2021-08-19 16:18:36 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415116156" for ::1 at 2021-08-19 16:18:36 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415116762" for ::1 at 2021-08-19 16:18:37 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415116763" for ::1 at 2021-08-19 16:18:37 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415134821" for ::1 at 2021-08-19 16:18:54 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415134824" for ::1 at 2021-08-19 16:18:54 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415141527" for ::1 at 2021-08-19 16:19:01 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415141529" for ::1 at 2021-08-19 16:19:01 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415150864" for ::1 at 2021-08-19 16:19:10 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415150866" for ::1 at 2021-08-19 16:19:10 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415155628" for ::1 at 2021-08-19 16:19:15 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415155629" for ::1 at 2021-08-19 16:19:15 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415268878" for ::1 at 2021-08-19 16:21:08 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415268880" for ::1 at 2021-08-19 16:21:08 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415292193" for ::1 at 2021-08-19 16:21:32 -0700
+Started GET "/assets/application.self-679247f0d0d3d1575b96ab47f6a0f2786fab65c1484493da089685557881e641.css?body=1&livereload=1629415292191" for ::1 at 2021-08-19 16:21:32 -0700
+Started GET "/" for ::1 at 2021-08-19 16:27:35 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.8ms)
+  Rendered shared/_masthead.html.erb (2.4ms)
+  Rendered shared/_sections_nav.html.erb (4.5ms)
+  Rendered shared/_search_modal.html.erb (1.0ms)
+  Rendered shared/_main_content.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 188ms (Views: 177.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1" for ::1 at 2021-08-19 16:27:35 -0700
+Started GET "/" for ::1 at 2021-08-19 16:27:50 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (13.7ms)
+  Rendered shared/_masthead.html.erb (16.5ms)
+  Rendered shared/_sections_nav.html.erb (0.5ms)
+  Rendered shared/_search_modal.html.erb (1.1ms)
+  Rendered shared/_main_content.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (202.5ms)
+Completed 200 OK in 433ms (Views: 415.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-19 16:29:09 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.8ms)
+  Rendered shared/_masthead.html.erb (1.1ms)
+  Rendered shared/_sections_nav.html.erb (61.2ms)
+  Rendered shared/_search_modal.html.erb (0.9ms)
+  Rendered shared/_main_content.html.erb (0.9ms)
+  Rendered static_pages/index.html.erb within layouts/application (453.9ms)
+Completed 200 OK in 707ms (Views: 685.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-19 16:29:42 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (1.3ms)
+  Rendered shared/_masthead.html.erb (1.0ms)
+  Rendered shared/_sections_nav.html.erb (0.7ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (60.5ms)
+Completed 200 OK in 158ms (Views: 145.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-19 16:30:52 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (2.3ms)
+  Rendered shared/_masthead.html.erb (1.7ms)
+  Rendered shared/_sections_nav.html.erb (1.0ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (347.5ms)
+Completed 200 OK in 817ms (Views: 584.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-19 16:31:14 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.6ms)
+  Rendered shared/_masthead.html.erb (0.7ms)
+  Rendered shared/_sections_nav.html.erb (38.5ms)
+  Rendered shared/_search_modal.html.erb (1.6ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (451.8ms)
+Completed 200 OK in 550ms (Views: 541.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629415924313" for ::1 at 2021-08-19 16:32:04 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629415924315" for ::1 at 2021-08-19 16:32:04 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416144763" for ::1 at 2021-08-19 16:35:44 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416144764" for ::1 at 2021-08-19 16:35:44 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416167054" for ::1 at 2021-08-19 16:36:07 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416167056" for ::1 at 2021-08-19 16:36:07 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416169646" for ::1 at 2021-08-19 16:36:09 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416169648" for ::1 at 2021-08-19 16:36:09 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416175787" for ::1 at 2021-08-19 16:36:15 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416175790" for ::1 at 2021-08-19 16:36:15 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416181685" for ::1 at 2021-08-19 16:36:21 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416181689" for ::1 at 2021-08-19 16:36:21 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416187013" for ::1 at 2021-08-19 16:36:27 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416187028" for ::1 at 2021-08-19 16:36:27 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416210945" for ::1 at 2021-08-19 16:36:50 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416210929" for ::1 at 2021-08-19 16:36:50 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416512977" for ::1 at 2021-08-19 16:41:52 -0700
+Started GET "/assets/application.self-554ab5d46606d80fb0e1b6565684b3d66b5fc5e7f2520ac9e44d0c174542d201.css?body=1&livereload=1629416512979" for ::1 at 2021-08-19 16:41:52 -0700
+Started GET "/" for ::1 at 2021-08-19 16:41:57 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (1.8ms)
+  Rendered shared/_sections_nav.html.erb (0.5ms)
+  Rendered shared/_search_modal.html.erb (0.6ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (669.2ms)
+Completed 200 OK in 1128ms (Views: 1122.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-93b090a8928e059563b88af4ff4d0bbaa0a9371a977fda28f0808c52581b2c8c.css?body=1" for ::1 at 2021-08-19 16:41:59 -0700
+Started GET "/assets/application.self-93b090a8928e059563b88af4ff4d0bbaa0a9371a977fda28f0808c52581b2c8c.css?body=1&livereload=1629416526897" for ::1 at 2021-08-19 16:42:06 -0700
+Started GET "/assets/application.self-93b090a8928e059563b88af4ff4d0bbaa0a9371a977fda28f0808c52581b2c8c.css?body=1&livereload=1629416526904" for ::1 at 2021-08-19 16:42:06 -0700
+Started GET "/assets/application.self-93b090a8928e059563b88af4ff4d0bbaa0a9371a977fda28f0808c52581b2c8c.css?body=1&livereload=1629416527886" for ::1 at 2021-08-19 16:42:07 -0700
+Started GET "/assets/application.self-93b090a8928e059563b88af4ff4d0bbaa0a9371a977fda28f0808c52581b2c8c.css?body=1&livereload=1629416527889" for ::1 at 2021-08-19 16:42:07 -0700
+Started GET "/assets/application.self-93b090a8928e059563b88af4ff4d0bbaa0a9371a977fda28f0808c52581b2c8c.css?body=1&livereload=1629416618676" for ::1 at 2021-08-19 16:43:38 -0700
+Started GET "/assets/application.self-93b090a8928e059563b88af4ff4d0bbaa0a9371a977fda28f0808c52581b2c8c.css?body=1&livereload=1629416618678" for ::1 at 2021-08-19 16:43:38 -0700
+Started GET "/" for ::1 at 2021-08-19 16:45:26 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (3.1ms)
+  Rendered shared/_masthead.html.erb (0.5ms)
+  Rendered shared/_sections_nav.html.erb (0.3ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (179.5ms)
+Completed 200 OK in 384ms (Views: 357.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ae2efa2934aec544820e515c7881be763738d1a448a99a554ea1d8ced9add3aa.css?body=1" for ::1 at 2021-08-19 16:45:27 -0700
+Started GET "/assets/application.self-ae2efa2934aec544820e515c7881be763738d1a448a99a554ea1d8ced9add3aa.css?body=1&livereload=1629416792506" for ::1 at 2021-08-19 16:46:32 -0700
+Started GET "/assets/application.self-ae2efa2934aec544820e515c7881be763738d1a448a99a554ea1d8ced9add3aa.css?body=1&livereload=1629416792509" for ::1 at 2021-08-19 16:46:32 -0700
+Started GET "/assets/application.self-ae2efa2934aec544820e515c7881be763738d1a448a99a554ea1d8ced9add3aa.css?body=1&livereload=1629416807902" for ::1 at 2021-08-19 16:46:47 -0700
+Started GET "/assets/application.self-ae2efa2934aec544820e515c7881be763738d1a448a99a554ea1d8ced9add3aa.css?body=1&livereload=1629416807904" for ::1 at 2021-08-19 16:46:47 -0700
+Started GET "/assets/application.self-ae2efa2934aec544820e515c7881be763738d1a448a99a554ea1d8ced9add3aa.css?body=1&livereload=1629416836092" for ::1 at 2021-08-19 16:47:16 -0700
+Started GET "/assets/application.self-ae2efa2934aec544820e515c7881be763738d1a448a99a554ea1d8ced9add3aa.css?body=1&livereload=1629416836093" for ::1 at 2021-08-19 16:47:16 -0700
+Started GET "/assets/application.self-ae2efa2934aec544820e515c7881be763738d1a448a99a554ea1d8ced9add3aa.css?body=1&livereload=1629416846202" for ::1 at 2021-08-19 16:47:26 -0700
+Started GET "/assets/application.self-ae2efa2934aec544820e515c7881be763738d1a448a99a554ea1d8ced9add3aa.css?body=1&livereload=1629416846204" for ::1 at 2021-08-19 16:47:26 -0700
+Started GET "/assets/application.self-ae2efa2934aec544820e515c7881be763738d1a448a99a554ea1d8ced9add3aa.css?body=1&livereload=1629416866722" for ::1 at 2021-08-19 16:47:46 -0700
+Started GET "/assets/application.self-ae2efa2934aec544820e515c7881be763738d1a448a99a554ea1d8ced9add3aa.css?body=1&livereload=1629416866721" for ::1 at 2021-08-19 16:47:46 -0700
+Started GET "/assets/application.self-ae2efa2934aec544820e515c7881be763738d1a448a99a554ea1d8ced9add3aa.css?body=1&livereload=1629416873661" for ::1 at 2021-08-19 16:47:53 -0700
+Started GET "/assets/application.self-ae2efa2934aec544820e515c7881be763738d1a448a99a554ea1d8ced9add3aa.css?body=1&livereload=1629416873663" for ::1 at 2021-08-19 16:47:53 -0700
+Started GET "/" for ::1 at 2021-08-19 16:48:07 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (52.1ms)
+  Rendered shared/_masthead.html.erb (0.6ms)
+  Rendered shared/_sections_nav.html.erb (1.1ms)
+  Rendered shared/_search_modal.html.erb (18.5ms)
+  Rendered shared/_main_content.html.erb (0.6ms)
+  Rendered static_pages/index.html.erb within layouts/application (893.5ms)
+Completed 200 OK in 1237ms (Views: 1231.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d521702302cda244856c9c19126d6825c29b9f5af9d365c92c3464200cb9117c.css?body=1" for ::1 at 2021-08-19 16:48:09 -0700
+Started GET "/assets/application.self-d521702302cda244856c9c19126d6825c29b9f5af9d365c92c3464200cb9117c.css?body=1&livereload=1629416896205" for ::1 at 2021-08-19 16:48:16 -0700
+Started GET "/assets/application.self-d521702302cda244856c9c19126d6825c29b9f5af9d365c92c3464200cb9117c.css?body=1&livereload=1629416896207" for ::1 at 2021-08-19 16:48:16 -0700
+Started GET "/" for ::1 at 2021-08-19 16:48:56 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (31.5ms)
+  Rendered shared/_masthead.html.erb (12.4ms)
+  Rendered shared/_sections_nav.html.erb (7.5ms)
+  Rendered shared/_search_modal.html.erb (0.7ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (111.3ms)
+Completed 200 OK in 255ms (Views: 242.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a3619bfbfbffc5ae668e1167a3d5241a3def14c2eee5edb8dc87fa115a461e0b.css?body=1" for ::1 at 2021-08-19 16:48:57 -0700
+Started GET "/" for ::1 at 2021-08-19 16:49:05 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.8ms)
+  Rendered shared/_masthead.html.erb (22.8ms)
+  Rendered shared/_sections_nav.html.erb (19.4ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (334.0ms)
+Completed 200 OK in 927ms (Views: 916.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-19 16:49:20 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (11.9ms)
+  Rendered shared/_masthead.html.erb (0.8ms)
+  Rendered shared/_sections_nav.html.erb (0.6ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (157.7ms)
+Completed 200 OK in 277ms (Views: 269.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-19 16:50:53 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered shared/_masthead.html.erb (0.6ms)
+  Rendered shared/_sections_nav.html.erb (3.0ms)
+  Rendered shared/_search_modal.html.erb (2.5ms)
+  Rendered shared/_main_content.html.erb (1.2ms)
+  Rendered static_pages/index.html.erb within layouts/application (538.8ms)
+Completed 200 OK in 1114ms (Views: 1106.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-19 16:51:53 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (0.8ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 318ms (Views: 311.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-19 16:52:00 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered shared/_masthead.html.erb (4.0ms)
+  Rendered shared/_sections_nav.html.erb (1.4ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (632.5ms)
+Completed 200 OK in 737ms (Views: 729.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-19 16:52:09 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.7ms)
+  Rendered shared/_masthead.html.erb (0.8ms)
+  Rendered shared/_sections_nav.html.erb (0.5ms)
+  Rendered shared/_search_modal.html.erb (1.6ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (458.3ms)
+Completed 200 OK in 613ms (Views: 605.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-19 16:52:12 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (3.1ms)
+  Rendered shared/_masthead.html.erb (0.5ms)
+  Rendered shared/_sections_nav.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (0.9ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (187.8ms)
+Completed 200 OK in 290ms (Views: 277.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-19 16:52:24 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered shared/_masthead.html.erb (0.5ms)
+  Rendered shared/_sections_nav.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (0.5ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (69.9ms)
+Completed 200 OK in 174ms (Views: 165.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-19 16:52:59 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.8ms)
+  Rendered shared/_sections_nav.html.erb (0.7ms)
+  Rendered shared/_search_modal.html.erb (1.5ms)
+  Rendered shared/_main_content.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (400.1ms)
+Completed 200 OK in 1176ms (Views: 1171.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-19 16:54:26 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.6ms)
+  Rendered shared/_masthead.html.erb (1.9ms)
+  Rendered shared/_sections_nav.html.erb (0.8ms)
+  Rendered shared/_search_modal.html.erb (0.5ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (717.9ms)
+Completed 200 OK in 928ms (Views: 921.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-19 16:57:33 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered shared/_masthead.html.erb (0.5ms)
+  Rendered shared/_sections_nav.html.erb (0.3ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (1.1ms)
+  Rendered static_pages/index.html.erb within layouts/application (436.1ms)
+Completed 200 OK in 766ms (Views: 758.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2021-08-19 16:57:34 -0700
+Started GET "/assets/application.self-a3619bfbfbffc5ae668e1167a3d5241a3def14c2eee5edb8dc87fa115a461e0b.css?body=1&livereload=1629417687753" for ::1 at 2021-08-19 17:01:27 -0700
+Started GET "/assets/application.self-a3619bfbfbffc5ae668e1167a3d5241a3def14c2eee5edb8dc87fa115a461e0b.css?body=1&livereload=1629417687755" for ::1 at 2021-08-19 17:01:27 -0700
+Started GET "/assets/application.self-a3619bfbfbffc5ae668e1167a3d5241a3def14c2eee5edb8dc87fa115a461e0b.css?body=1&livereload=1629417698071" for ::1 at 2021-08-19 17:01:38 -0700
+Started GET "/assets/application.self-a3619bfbfbffc5ae668e1167a3d5241a3def14c2eee5edb8dc87fa115a461e0b.css?body=1&livereload=1629417698077" for ::1 at 2021-08-19 17:01:38 -0700
+Started GET "/assets/application.self-a3619bfbfbffc5ae668e1167a3d5241a3def14c2eee5edb8dc87fa115a461e0b.css?body=1&livereload=1629417726236" for ::1 at 2021-08-19 17:02:06 -0700
+Started GET "/assets/application.self-a3619bfbfbffc5ae668e1167a3d5241a3def14c2eee5edb8dc87fa115a461e0b.css?body=1&livereload=1629417726226" for ::1 at 2021-08-19 17:02:06 -0700
+Started GET "/assets/application.self-a3619bfbfbffc5ae668e1167a3d5241a3def14c2eee5edb8dc87fa115a461e0b.css?body=1&livereload=1629417801132" for ::1 at 2021-08-19 17:03:21 -0700
+Started GET "/assets/application.self-a3619bfbfbffc5ae668e1167a3d5241a3def14c2eee5edb8dc87fa115a461e0b.css?body=1&livereload=1629417801131" for ::1 at 2021-08-19 17:03:21 -0700
+Started GET "/" for ::1 at 2021-08-19 17:07:31 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (0.5ms)
+  Rendered shared/_search_modal.html.erb (0.5ms)
+  Rendered shared/_main_content.html.erb (13.0ms)
+  Rendered static_pages/index.html.erb within layouts/application (276.7ms)
+Completed 200 OK in 1161ms (Views: 1153.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1" for ::1 at 2021-08-19 17:07:33 -0700
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2021-08-19 17:07:33 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419226187" for ::1 at 2021-08-19 17:27:06 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419226190" for ::1 at 2021-08-19 17:27:06 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419227796" for ::1 at 2021-08-19 17:27:07 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419227830" for ::1 at 2021-08-19 17:27:07 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419235431" for ::1 at 2021-08-19 17:27:15 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419235433" for ::1 at 2021-08-19 17:27:15 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419269649" for ::1 at 2021-08-19 17:27:49 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419269650" for ::1 at 2021-08-19 17:27:49 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419275359" for ::1 at 2021-08-19 17:27:55 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419275364" for ::1 at 2021-08-19 17:27:55 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419281086" for ::1 at 2021-08-19 17:28:01 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419281087" for ::1 at 2021-08-19 17:28:01 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419286111" for ::1 at 2021-08-19 17:28:06 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419286112" for ::1 at 2021-08-19 17:28:06 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419316114" for ::1 at 2021-08-19 17:28:36 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419316117" for ::1 at 2021-08-19 17:28:36 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419321695" for ::1 at 2021-08-19 17:28:41 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419321696" for ::1 at 2021-08-19 17:28:41 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419325826" for ::1 at 2021-08-19 17:28:45 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419325828" for ::1 at 2021-08-19 17:28:45 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419392097" for ::1 at 2021-08-19 17:29:52 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419392098" for ::1 at 2021-08-19 17:29:52 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419856699" for ::1 at 2021-08-19 17:37:36 -0700
+Started GET "/assets/application.self-a4015ea303a39ba30da57fee1783182cb9fc7edebeafcb541f221ef70753a57e.css?body=1&livereload=1629419856718" for ::1 at 2021-08-19 17:37:36 -0700
+Started GET "/" for ::1 at 2021-08-19 17:37:37 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (206.3ms)
+  Rendered shared/_sections_nav.html.erb (0.5ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_main_content.html.erb (2.6ms)
+  Rendered static_pages/index.html.erb within layouts/application (312.0ms)
+Completed 200 OK in 756ms (Views: 749.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-702e02648df51fad6c62e9ff59fddd0b48e41afe2cf1db706be68e2298b62562.css?body=1" for ::1 at 2021-08-19 17:37:39 -0700
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2021-08-19 17:37:39 -0700
+Started GET "/" for ::1 at 2021-08-19 17:48:17 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (11.2ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (164.5ms)
+Completed 200 OK in 235ms (Views: 225.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2021-08-19 17:48:18 -0700
+Started GET "/assets/application.self-702e02648df51fad6c62e9ff59fddd0b48e41afe2cf1db706be68e2298b62562.css?body=1&livereload=1629420572512" for ::1 at 2021-08-19 17:49:32 -0700
+Started GET "/assets/application.self-702e02648df51fad6c62e9ff59fddd0b48e41afe2cf1db706be68e2298b62562.css?body=1&livereload=1629420572521" for ::1 at 2021-08-19 17:49:32 -0700
+Started GET "/assets/application.self-702e02648df51fad6c62e9ff59fddd0b48e41afe2cf1db706be68e2298b62562.css?body=1&livereload=1629420622787" for ::1 at 2021-08-19 17:50:22 -0700
+Started GET "/assets/application.self-702e02648df51fad6c62e9ff59fddd0b48e41afe2cf1db706be68e2298b62562.css?body=1&livereload=1629420622815" for ::1 at 2021-08-19 17:50:22 -0700
+Started GET "/" for ::1 at 2021-08-19 17:50:25 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered shared/_masthead.html.erb (0.5ms)
+  Rendered shared/_sections_nav.html.erb (0.6ms)
+  Rendered shared/_search_modal.html.erb (0.5ms)
+  Rendered shared/_main_content.html.erb (0.6ms)
+  Rendered static_pages/index.html.erb within layouts/application (346.7ms)
+Completed 200 OK in 1034ms (Views: 1028.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-48a40f38e2178645a509f4dca2286c4629dd551557c45ee2aa69ba80790f02ac.css?body=1" for ::1 at 2021-08-19 17:50:27 -0700
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2021-08-19 17:50:28 -0700
+Started GET "/" for ::1 at 2021-08-19 17:50:54 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.6ms)
+  Rendered shared/_masthead.html.erb (0.6ms)
+  Rendered shared/_sections_nav.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (1.9ms)
+  Rendered shared/_main_content.html.erb (19.9ms)
+  Rendered static_pages/index.html.erb within layouts/application (249.1ms)
+Completed 200 OK in 759ms (Views: 749.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2021-08-19 17:50:56 -0700
+Started GET "/assets/application.self-48a40f38e2178645a509f4dca2286c4629dd551557c45ee2aa69ba80790f02ac.css?body=1&livereload=1629420666997" for ::1 at 2021-08-19 17:51:07 -0700
+Started GET "/assets/application.self-48a40f38e2178645a509f4dca2286c4629dd551557c45ee2aa69ba80790f02ac.css?body=1&livereload=1629420667000" for ::1 at 2021-08-19 17:51:07 -0700
+Started GET "/assets/application.self-48a40f38e2178645a509f4dca2286c4629dd551557c45ee2aa69ba80790f02ac.css?body=1&livereload=1629420722443" for ::1 at 2021-08-19 17:52:02 -0700
+Started GET "/assets/application.self-48a40f38e2178645a509f4dca2286c4629dd551557c45ee2aa69ba80790f02ac.css?body=1&livereload=1629420722445" for ::1 at 2021-08-19 17:52:02 -0700
+Started GET "/" for ::1 at 2021-08-19 17:52:05 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (1.2ms)
+  Rendered shared/_masthead.html.erb (2.3ms)
+  Rendered shared/_sections_nav.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (0.7ms)
+  Rendered shared/_main_content.html.erb (3.8ms)
+  Rendered static_pages/index.html.erb within layouts/application (618.7ms)
+Completed 200 OK in 1136ms (Views: 1130.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5cc5ccac3ce8dbedb17f8474dca8becb36db86bf9c80e953a4c5d0fea8148eac.css?body=1" for ::1 at 2021-08-19 17:52:06 -0700
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2021-08-19 17:52:07 -0700
+Started GET "/assets/application.self-5cc5ccac3ce8dbedb17f8474dca8becb36db86bf9c80e953a4c5d0fea8148eac.css?body=1&livereload=1629420734903" for ::1 at 2021-08-19 17:52:14 -0700
+Started GET "/assets/application.self-5cc5ccac3ce8dbedb17f8474dca8becb36db86bf9c80e953a4c5d0fea8148eac.css?body=1&livereload=1629420734906" for ::1 at 2021-08-19 17:52:14 -0700
+Started GET "/assets/application.self-5cc5ccac3ce8dbedb17f8474dca8becb36db86bf9c80e953a4c5d0fea8148eac.css?body=1&livereload=1629420748328" for ::1 at 2021-08-19 17:52:28 -0700
+Started GET "/assets/application.self-5cc5ccac3ce8dbedb17f8474dca8becb36db86bf9c80e953a4c5d0fea8148eac.css?body=1&livereload=1629420748330" for ::1 at 2021-08-19 17:52:28 -0700
+Started GET "/" for ::1 at 2021-08-19 17:52:29 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.7ms)
+  Rendered shared/_masthead.html.erb (3.8ms)
+  Rendered shared/_sections_nav.html.erb (0.6ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (168.5ms)
+Completed 200 OK in 546ms (Views: 501.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ac3e926ff51e31c01a7e0d56e2e0a0b2bd8323d488a3e48d055ebb6e0c34c713.css?body=1" for ::1 at 2021-08-19 17:52:30 -0700
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2021-08-19 17:52:31 -0700
+Started GET "/" for ::1 at 2021-08-19 17:54:06 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered shared/_masthead.html.erb (0.5ms)
+  Rendered shared/_sections_nav.html.erb (0.5ms)
+  Rendered shared/_search_modal.html.erb (0.5ms)
+  Rendered shared/_main_content.html.erb (91.7ms)
+  Rendered static_pages/index.html.erb within layouts/application (762.8ms)
+Completed 200 OK in 1644ms (Views: 1616.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2021-08-19 17:54:10 -0700
+Started GET "/" for ::1 at 2021-08-19 17:54:23 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_gear_dropdown.html.erb (0.5ms)
+  Rendered shared/_main_nav.html.erb (14.7ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (13.8ms)
+  Rendered shared/_search_modal.html.erb (0.7ms)
+  Rendered shared/_main_content.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (260.7ms)
+Completed 200 OK in 372ms (Views: 368.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2021-08-19 17:54:25 -0700
+Started GET "/" for ::1 at 2021-08-19 17:55:59 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_gear_dropdown.html.erb (732.7ms)
+  Rendered shared/_gear_dropdown.html.erb (766.8ms)
+  Rendered shared/_gear_dropdown.html.erb (787.0ms)
+  Rendered shared/_gear_dropdown.html.erb (798.0ms)
+  Rendered shared/_gear_dropdown.html.erb (831.5ms)
+  Rendered shared/_gear_dropdown.html.erb (845.0ms)
+  Rendered shared/_gear_dropdown.html.erb (856.7ms)
+  Rendered shared/_gear_dropdown.html.erb (876.9ms)
+  Rendered shared/_gear_dropdown.html.erb (895.8ms)
+  Rendered shared/_gear_dropdown.html.erb (966.8ms)
+  Rendered shared/_gear_dropdown.html.erb (971.0ms)
+  Rendered shared/_gear_dropdown.html.erb (981.1ms)
+  Rendered shared/_gear_dropdown.html.erb (986.4ms)
+  Rendered shared/_gear_dropdown.html.erb (1005.8ms)
+  Rendered shared/_gear_dropdown.html.erb (1014.0ms)
+  Rendered shared/_gear_dropdown.html.erb (1033.0ms)
+  Rendered shared/_gear_dropdown.html.erb (1052.9ms)
+  Rendered shared/_gear_dropdown.html.erb (1079.0ms)
+  Rendered shared/_gear_dropdown.html.erb (1096.8ms)
+  Rendered shared/_gear_dropdown.html.erb (1120.7ms)
+  Rendered shared/_gear_dropdown.html.erb (1131.8ms)
+  Rendered shared/_gear_dropdown.html.erb (1142.2ms)
+  Rendered shared/_gear_dropdown.html.erb (1150.3ms)
+  Rendered shared/_gear_dropdown.html.erb (1153.7ms)
+  Rendered shared/_gear_dropdown.html.erb (1189.6ms)
+  Rendered shared/_gear_dropdown.html.erb (1195.5ms)
+  Rendered shared/_gear_dropdown.html.erb (1203.5ms)
+  Rendered shared/_gear_dropdown.html.erb (1265.4ms)
+  Rendered shared/_gear_dropdown.html.erb (1271.1ms)
+  Rendered shared/_gear_dropdown.html.erb (1292.7ms)
+  Rendered shared/_gear_dropdown.html.erb (1315.3ms)
+  Rendered shared/_gear_dropdown.html.erb (1329.8ms)
+  Rendered shared/_gear_dropdown.html.erb (1353.8ms)
+  Rendered shared/_gear_dropdown.html.erb (1370.9ms)
+  Rendered shared/_gear_dropdown.html.erb (1391.7ms)
+  Rendered shared/_gear_dropdown.html.erb (1394.6ms)
+  Rendered shared/_gear_dropdown.html.erb (1401.6ms)
+  Rendered shared/_gear_dropdown.html.erb (1409.3ms)
+  Rendered shared/_gear_dropdown.html.erb (1415.3ms)
+  Rendered shared/_gear_dropdown.html.erb (1425.8ms)
+  Rendered shared/_gear_dropdown.html.erb (1431.5ms)
+  Rendered shared/_gear_dropdown.html.erb (1439.1ms)
+  Rendered shared/_gear_dropdown.html.erb (1462.7ms)
+  Rendered shared/_gear_dropdown.html.erb (1466.5ms)
+  Rendered shared/_gear_dropdown.html.erb (1483.1ms)
+  Rendered shared/_gear_dropdown.html.erb (1497.6ms)
+  Rendered shared/_gear_dropdown.html.erb (1502.7ms)
+  Rendered shared/_gear_dropdown.html.erb (1520.3ms)
+  Rendered shared/_gear_dropdown.html.erb (1523.4ms)
+  Rendered shared/_gear_dropdown.html.erb (1539.7ms)
+  Rendered shared/_gear_dropdown.html.erb (1544.5ms)
+  Rendered shared/_gear_dropdown.html.erb (1549.8ms)
+  Rendered shared/_gear_dropdown.html.erb (1554.9ms)
+  Rendered shared/_gear_dropdown.html.erb (1571.0ms)
+  Rendered shared/_gear_dropdown.html.erb (1575.6ms)
+  Rendered shared/_gear_dropdown.html.erb (1579.4ms)
+  Rendered shared/_gear_dropdown.html.erb (1589.0ms)
+  Rendered shared/_gear_dropdown.html.erb (1594.5ms)
+  Rendered shared/_gear_dropdown.html.erb (1599.9ms)
+  Rendered shared/_gear_dropdown.html.erb (1613.8ms)
+  Rendered shared/_gear_dropdown.html.erb (1634.8ms)
+  Rendered shared/_gear_dropdown.html.erb (1639.0ms)
+  Rendered shared/_gear_dropdown.html.erb (1670.6ms)
+  Rendered shared/_gear_dropdown.html.erb (1675.4ms)
+  Rendered shared/_gear_dropdown.html.erb (1717.3ms)
+  Rendered shared/_gear_dropdown.html.erb (1731.9ms)
+  Rendered shared/_gear_dropdown.html.erb (1743.5ms)
+  Rendered shared/_gear_dropdown.html.erb (1770.6ms)
+  Rendered shared/_gear_dropdown.html.erb (1992.0ms)
+  Rendered shared/_gear_dropdown.html.erb (2003.2ms)
+  Rendered shared/_gear_dropdown.html.erb (2031.2ms)
+  Rendered shared/_gear_dropdown.html.erb (2063.8ms)
+  Rendered shared/_gear_dropdown.html.erb (2095.4ms)
+  Rendered shared/_gear_dropdown.html.erb (2131.4ms)
+  Rendered shared/_gear_dropdown.html.erb (2178.5ms)
+  Rendered shared/_gear_dropdown.html.erb (2196.9ms)
+  Rendered shared/_gear_dropdown.html.erb (2207.2ms)
+  Rendered shared/_gear_dropdown.html.erb (2234.0ms)
+  Rendered shared/_gear_dropdown.html.erb (2265.3ms)
+  Rendered shared/_gear_dropdown.html.erb (2286.2ms)
+  Rendered shared/_gear_dropdown.html.erb (2292.4ms)
+  Rendered shared/_gear_dropdown.html.erb (2303.0ms)
+  Rendered shared/_gear_dropdown.html.erb (2313.5ms)
+  Rendered shared/_gear_dropdown.html.erb (2335.9ms)
+  Rendered shared/_gear_dropdown.html.erb (2340.8ms)
+  Rendered shared/_gear_dropdown.html.erb (2349.5ms)
+  Rendered shared/_gear_dropdown.html.erb (2355.3ms)
+  Rendered shared/_gear_dropdown.html.erb (2362.7ms)
+  Rendered shared/_gear_dropdown.html.erb (2368.2ms)
+  Rendered shared/_gear_dropdown.html.erb (2372.2ms)
+  Rendered shared/_gear_dropdown.html.erb (2387.6ms)
+  Rendered shared/_gear_dropdown.html.erb (2408.9ms)
+  Rendered shared/_gear_dropdown.html.erb (2415.0ms)
+  Rendered shared/_gear_dropdown.html.erb (2432.5ms)
+  Rendered shared/_gear_dropdown.html.erb (2445.0ms)
+  Rendered shared/_gear_dropdown.html.erb (2456.3ms)
+  Rendered shared/_gear_dropdown.html.erb (2486.3ms)
+  Rendered shared/_gear_dropdown.html.erb (2509.9ms)
+  Rendered shared/_gear_dropdown.html.erb (2531.9ms)
+  Rendered shared/_gear_dropdown.html.erb (2538.2ms)
+  Rendered shared/_gear_dropdown.html.erb (2541.9ms)
+  Rendered shared/_gear_dropdown.html.erb (2565.4ms)
+  Rendered shared/_gear_dropdown.html.erb (2576.8ms)
+  Rendered shared/_gear_dropdown.html.erb (2601.6ms)
+  Rendered shared/_gear_dropdown.html.erb (2605.5ms)
+  Rendered shared/_gear_dropdown.html.erb (2609.7ms)
+  Rendered shared/_gear_dropdown.html.erb (2615.1ms)
+  Rendered shared/_gear_dropdown.html.erb (2635.5ms)
+  Rendered shared/_gear_dropdown.html.erb (2685.4ms)
+  Rendered shared/_gear_dropdown.html.erb (2722.8ms)
+  Rendered shared/_gear_dropdown.html.erb (2726.5ms)
+  Rendered shared/_gear_dropdown.html.erb (2729.7ms)
+  Rendered shared/_gear_dropdown.html.erb (2743.8ms)
+  Rendered shared/_gear_dropdown.html.erb (2760.1ms)
+  Rendered shared/_gear_dropdown.html.erb (2769.4ms)
+  Rendered shared/_gear_dropdown.html.erb (2784.5ms)
+  Rendered shared/_gear_dropdown.html.erb (2794.2ms)
+  Rendered shared/_gear_dropdown.html.erb (2798.9ms)
+  Rendered shared/_gear_dropdown.html.erb (2811.8ms)
+  Rendered shared/_gear_dropdown.html.erb (2817.7ms)
+  Rendered shared/_gear_dropdown.html.erb (2822.4ms)
+  Rendered shared/_gear_dropdown.html.erb (2829.0ms)
+  Rendered shared/_gear_dropdown.html.erb (2835.2ms)
+  Rendered shared/_gear_dropdown.html.erb (2852.3ms)
+  Rendered shared/_gear_dropdown.html.erb (2869.9ms)
+  Rendered shared/_gear_dropdown.html.erb (2884.7ms)
+  Rendered shared/_gear_dropdown.html.erb (2897.0ms)
+  Rendered shared/_gear_dropdown.html.erb (2901.3ms)
+  Rendered shared/_gear_dropdown.html.erb (2914.4ms)
+  Rendered shared/_gear_dropdown.html.erb (2919.0ms)
+  Rendered shared/_gear_dropdown.html.erb (2931.7ms)
+  Rendered shared/_gear_dropdown.html.erb (2936.4ms)
+  Rendered shared/_gear_dropdown.html.erb (2941.5ms)
+  Rendered shared/_gear_dropdown.html.erb (2947.7ms)
+  Rendered shared/_gear_dropdown.html.erb (2952.8ms)
+  Rendered shared/_gear_dropdown.html.erb (2965.3ms)
+  Rendered shared/_gear_dropdown.html.erb (2972.5ms)
+  Rendered shared/_gear_dropdown.html.erb (2981.0ms)
+  Rendered shared/_gear_dropdown.html.erb (2987.3ms)
+  Rendered shared/_gear_dropdown.html.erb (3001.8ms)
+  Rendered shared/_gear_dropdown.html.erb (3019.7ms)
+  Rendered shared/_gear_dropdown.html.erb (3025.7ms)
+  Rendered shared/_gear_dropdown.html.erb (3028.8ms)
+  Rendered shared/_gear_dropdown.html.erb (3036.2ms)
+  Rendered shared/_gear_dropdown.html.erb (3041.2ms)
+  Rendered shared/_gear_dropdown.html.erb (3044.3ms)
+  Rendered shared/_gear_dropdown.html.erb (3060.4ms)
+  Rendered shared/_gear_dropdown.html.erb (3066.6ms)
+  Rendered shared/_gear_dropdown.html.erb (3073.8ms)
+  Rendered shared/_gear_dropdown.html.erb (3078.0ms)
+  Rendered shared/_gear_dropdown.html.erb (3086.5ms)
+  Rendered shared/_gear_dropdown.html.erb (3111.1ms)
+  Rendered shared/_gear_dropdown.html.erb (3151.6ms)
+  Rendered shared/_gear_dropdown.html.erb (3178.3ms)
+  Rendered shared/_gear_dropdown.html.erb (3188.4ms)
+  Rendered shared/_gear_dropdown.html.erb (3194.4ms)
+  Rendered shared/_gear_dropdown.html.erb (3200.6ms)
+  Rendered shared/_gear_dropdown.html.erb (3252.0ms)
+  Rendered shared/_gear_dropdown.html.erb (3259.5ms)
+  Rendered shared/_gear_dropdown.html.erb (3265.9ms)
+  Rendered shared/_gear_dropdown.html.erb (3273.5ms)
+  Rendered shared/_gear_dropdown.html.erb (3307.4ms)
+  Rendered shared/_gear_dropdown.html.erb (3312.0ms)
+  Rendered shared/_gear_dropdown.html.erb (3323.9ms)
+  Rendered shared/_gear_dropdown.html.erb (3338.4ms)
+  Rendered shared/_gear_dropdown.html.erb (3343.6ms)
+  Rendered shared/_gear_dropdown.html.erb (3371.3ms)
+  Rendered shared/_gear_dropdown.html.erb (3384.2ms)
+  Rendered shared/_gear_dropdown.html.erb (3410.0ms)
+  Rendered shared/_gear_dropdown.html.erb (3437.4ms)
+  Rendered shared/_gear_dropdown.html.erb (3443.8ms)
+  Rendered shared/_gear_dropdown.html.erb (3464.1ms)
+  Rendered shared/_gear_dropdown.html.erb (3479.2ms)
+  Rendered shared/_gear_dropdown.html.erb (3486.8ms)
+  Rendered shared/_gear_dropdown.html.erb (3503.8ms)
+  Rendered shared/_gear_dropdown.html.erb (3533.9ms)
+  Rendered shared/_gear_dropdown.html.erb (3552.5ms)
+  Rendered shared/_gear_dropdown.html.erb (3557.5ms)
+  Rendered shared/_gear_dropdown.html.erb (3581.5ms)
+  Rendered shared/_gear_dropdown.html.erb (3588.9ms)
+  Rendered shared/_gear_dropdown.html.erb (3602.3ms)
+  Rendered shared/_gear_dropdown.html.erb (3617.8ms)
+  Rendered shared/_gear_dropdown.html.erb (3621.5ms)
+  Rendered shared/_gear_dropdown.html.erb (3625.5ms)
+  Rendered shared/_gear_dropdown.html.erb (3657.5ms)
+  Rendered shared/_gear_dropdown.html.erb (3662.1ms)
+  Rendered shared/_gear_dropdown.html.erb (3671.4ms)
+  Rendered shared/_gear_dropdown.html.erb (3685.3ms)
+  Rendered shared/_gear_dropdown.html.erb (3702.4ms)
+  Rendered shared/_gear_dropdown.html.erb (3705.9ms)
+  Rendered shared/_gear_dropdown.html.erb (3709.0ms)
+  Rendered shared/_gear_dropdown.html.erb (3715.9ms)
+  Rendered shared/_gear_dropdown.html.erb (3757.2ms)
+  Rendered shared/_gear_dropdown.html.erb (3761.0ms)
+  Rendered shared/_gear_dropdown.html.erb (3764.1ms)
+  Rendered shared/_gear_dropdown.html.erb (3775.2ms)
+  Rendered shared/_gear_dropdown.html.erb (3780.8ms)
+  Rendered shared/_gear_dropdown.html.erb (3795.9ms)
+  Rendered shared/_gear_dropdown.html.erb (3801.3ms)
+  Rendered shared/_gear_dropdown.html.erb (3810.5ms)
+  Rendered shared/_gear_dropdown.html.erb (3816.0ms)
+  Rendered shared/_gear_dropdown.html.erb (3856.5ms)
+  Rendered shared/_gear_dropdown.html.erb (3860.1ms)
+  Rendered shared/_gear_dropdown.html.erb (3892.3ms)
+  Rendered shared/_gear_dropdown.html.erb (3908.7ms)
+  Rendered shared/_gear_dropdown.html.erb (3916.3ms)
+  Rendered shared/_gear_dropdown.html.erb (3927.0ms)
+  Rendered shared/_gear_dropdown.html.erb (3936.0ms)
+  Rendered shared/_gear_dropdown.html.erb (3949.3ms)
+  Rendered shared/_gear_dropdown.html.erb (3976.8ms)
+  Rendered shared/_gear_dropdown.html.erb (3981.8ms)
+  Rendered shared/_gear_dropdown.html.erb (3989.5ms)
+  Rendered shared/_gear_dropdown.html.erb (3995.3ms)
+  Rendered shared/_gear_dropdown.html.erb (4000.1ms)
+  Rendered shared/_gear_dropdown.html.erb (4037.8ms)
+  Rendered shared/_gear_dropdown.html.erb (4052.1ms)
+  Rendered shared/_gear_dropdown.html.erb (4055.0ms)
+  Rendered shared/_gear_dropdown.html.erb (4058.4ms)
+  Rendered shared/_gear_dropdown.html.erb (4068.5ms)
+  Rendered shared/_gear_dropdown.html.erb (4078.2ms)
+  Rendered shared/_gear_dropdown.html.erb (4084.4ms)
+  Rendered shared/_gear_dropdown.html.erb (4087.5ms)
+  Rendered shared/_gear_dropdown.html.erb (4101.8ms)
+  Rendered shared/_gear_dropdown.html.erb (4107.0ms)
+  Rendered shared/_gear_dropdown.html.erb (4109.9ms)
+  Rendered shared/_gear_dropdown.html.erb (4112.6ms)
+  Rendered shared/_gear_dropdown.html.erb (4146.7ms)
+  Rendered shared/_gear_dropdown.html.erb (4156.0ms)
+  Rendered shared/_gear_dropdown.html.erb (4169.9ms)
+  Rendered shared/_gear_dropdown.html.erb (4175.2ms)
+  Rendered shared/_gear_dropdown.html.erb (4184.4ms)
+  Rendered shared/_gear_dropdown.html.erb (4187.7ms)
+  Rendered shared/_gear_dropdown.html.erb (4199.4ms)
+  Rendered shared/_gear_dropdown.html.erb (4202.4ms)
+  Rendered shared/_gear_dropdown.html.erb (4235.0ms)
+  Rendered shared/_gear_dropdown.html.erb (4238.5ms)
+  Rendered shared/_gear_dropdown.html.erb (4242.3ms)
+  Rendered shared/_gear_dropdown.html.erb (4246.9ms)
+  Rendered shared/_gear_dropdown.html.erb (4250.9ms)
+  Rendered shared/_gear_dropdown.html.erb (4261.0ms)
+  Rendered shared/_gear_dropdown.html.erb (4271.0ms)
+  Rendered shared/_gear_dropdown.html.erb (4274.4ms)
+  Rendered shared/_gear_dropdown.html.erb (4277.3ms)
+  Rendered shared/_gear_dropdown.html.erb (4281.0ms)
+  Rendered shared/_gear_dropdown.html.erb (4316.0ms)
+  Rendered shared/_gear_dropdown.html.erb (4329.0ms)
+  Rendered shared/_gear_dropdown.html.erb (4365.9ms)
+  Rendered shared/_gear_dropdown.html.erb (4379.0ms)
+  Rendered shared/_gear_dropdown.html.erb (4383.6ms)
+  Rendered shared/_gear_dropdown.html.erb (4401.0ms)
+  Rendered shared/_gear_dropdown.html.erb (4405.2ms)
+  Rendered shared/_gear_dropdown.html.erb (4411.8ms)
+  Rendered shared/_gear_dropdown.html.erb (4416.8ms)
+  Rendered shared/_gear_dropdown.html.erb (4432.8ms)
+  Rendered shared/_gear_dropdown.html.erb (4440.2ms)
+  Rendered shared/_gear_dropdown.html.erb (4484.6ms)
+  Rendered shared/_gear_dropdown.html.erb (4490.3ms)
+  Rendered shared/_gear_dropdown.html.erb (4498.7ms)
+  Rendered shared/_gear_dropdown.html.erb (4521.9ms)
+  Rendered shared/_gear_dropdown.html.erb (4527.1ms)
+  Rendered shared/_gear_dropdown.html.erb (4546.8ms)
+  Rendered shared/_gear_dropdown.html.erb (4564.0ms)
+  Rendered shared/_gear_dropdown.html.erb (4603.7ms)
+  Rendered shared/_gear_dropdown.html.erb (4609.8ms)
+  Rendered shared/_gear_dropdown.html.erb (4676.6ms)
+  Rendered shared/_gear_dropdown.html.erb (4683.4ms)
+  Rendered shared/_gear_dropdown.html.erb (4688.0ms)
+  Rendered shared/_gear_dropdown.html.erb (4724.4ms)
+  Rendered shared/_gear_dropdown.html.erb (4773.4ms)
+  Rendered shared/_gear_dropdown.html.erb (4788.5ms)
+  Rendered shared/_gear_dropdown.html.erb (4796.2ms)
+  Rendered shared/_gear_dropdown.html.erb (4811.1ms)
+  Rendered shared/_gear_dropdown.html.erb (4829.3ms)
+  Rendered shared/_gear_dropdown.html.erb (4847.7ms)
+  Rendered shared/_gear_dropdown.html.erb (4867.2ms)
+  Rendered shared/_gear_dropdown.html.erb (4870.6ms)
+  Rendered shared/_gear_dropdown.html.erb (4873.7ms)
+  Rendered shared/_gear_dropdown.html.erb (4878.8ms)
+  Rendered shared/_gear_dropdown.html.erb (4898.2ms)
+  Rendered shared/_gear_dropdown.html.erb (4907.6ms)
+  Rendered shared/_gear_dropdown.html.erb (4941.9ms)
+  Rendered shared/_gear_dropdown.html.erb (4955.0ms)
+  Rendered shared/_gear_dropdown.html.erb (4965.8ms)
+  Rendered shared/_gear_dropdown.html.erb (4971.9ms)
+  Rendered shared/_gear_dropdown.html.erb (4980.1ms)
+  Rendered shared/_gear_dropdown.html.erb (4997.5ms)
+  Rendered shared/_gear_dropdown.html.erb (5004.7ms)
+  Rendered shared/_gear_dropdown.html.erb (5036.5ms)
+  Rendered shared/_gear_dropdown.html.erb (5146.2ms)
+  Rendered shared/_gear_dropdown.html.erb (5152.1ms)
+  Rendered shared/_gear_dropdown.html.erb (5167.6ms)
+  Rendered shared/_gear_dropdown.html.erb (5181.2ms)
+  Rendered shared/_gear_dropdown.html.erb (5208.6ms)
+  Rendered shared/_gear_dropdown.html.erb (5254.2ms)
+  Rendered shared/_gear_dropdown.html.erb (5278.1ms)
+  Rendered shared/_gear_dropdown.html.erb (5298.8ms)
+  Rendered shared/_gear_dropdown.html.erb (5306.5ms)
+  Rendered shared/_gear_dropdown.html.erb (5319.6ms)
+  Rendered shared/_gear_dropdown.html.erb (5326.5ms)
+  Rendered shared/_gear_dropdown.html.erb (5370.6ms)
+  Rendered shared/_gear_dropdown.html.erb (5374.5ms)
+  Rendered shared/_gear_dropdown.html.erb (5378.3ms)
+  Rendered shared/_gear_dropdown.html.erb (5386.2ms)
+  Rendered shared/_gear_dropdown.html.erb (5402.5ms)
+  Rendered shared/_gear_dropdown.html.erb (5419.1ms)
+  Rendered shared/_gear_dropdown.html.erb (5431.2ms)
+  Rendered shared/_gear_dropdown.html.erb (5447.1ms)
+  Rendered shared/_gear_dropdown.html.erb (5453.2ms)
+  Rendered shared/_gear_dropdown.html.erb (5459.8ms)
+  Rendered shared/_gear_dropdown.html.erb (5469.0ms)
+  Rendered shared/_gear_dropdown.html.erb (5484.6ms)
+  Rendered shared/_gear_dropdown.html.erb (5495.2ms)
+  Rendered shared/_gear_dropdown.html.erb (5506.7ms)
+  Rendered shared/_gear_dropdown.html.erb (5512.1ms)
+  Rendered shared/_gear_dropdown.html.erb (5525.8ms)
+  Rendered shared/_gear_dropdown.html.erb (5529.3ms)
+  Rendered shared/_gear_dropdown.html.erb (5532.8ms)
+  Rendered shared/_gear_dropdown.html.erb (5535.6ms)
+  Rendered shared/_gear_dropdown.html.erb (5541.3ms)
+  Rendered shared/_gear_dropdown.html.erb (5558.8ms)
+  Rendered shared/_gear_dropdown.html.erb (5564.4ms)
+  Rendered shared/_gear_dropdown.html.erb (5569.0ms)
+  Rendered shared/_gear_dropdown.html.erb (5573.6ms)
+  Rendered shared/_gear_dropdown.html.erb (5578.6ms)
+  Rendered shared/_gear_dropdown.html.erb (5598.8ms)
+  Rendered shared/_gear_dropdown.html.erb (5625.4ms)
+  Rendered shared/_gear_dropdown.html.erb (5632.2ms)
+  Rendered shared/_gear_dropdown.html.erb (5635.7ms)
+  Rendered shared/_gear_dropdown.html.erb (5642.3ms)
+  Rendered shared/_gear_dropdown.html.erb (5646.7ms)
+  Rendered shared/_gear_dropdown.html.erb (5653.0ms)
+  Rendered shared/_gear_dropdown.html.erb (5665.9ms)
+  Rendered shared/_gear_dropdown.html.erb (5679.5ms)
+  Rendered shared/_gear_dropdown.html.erb (5686.0ms)
+  Rendered shared/_gear_dropdown.html.erb (5690.3ms)
+  Rendered shared/_gear_dropdown.html.erb (5702.2ms)
+  Rendered shared/_gear_dropdown.html.erb (5717.2ms)
+  Rendered shared/_gear_dropdown.html.erb (5722.9ms)
+  Rendered shared/_gear_dropdown.html.erb (5731.8ms)
+  Rendered shared/_gear_dropdown.html.erb (5765.7ms)
+  Rendered shared/_gear_dropdown.html.erb (5778.5ms)
+  Rendered shared/_gear_dropdown.html.erb (5814.5ms)
+  Rendered shared/_gear_dropdown.html.erb (5818.4ms)
+  Rendered shared/_gear_dropdown.html.erb (5821.1ms)
+  Rendered shared/_gear_dropdown.html.erb (5829.3ms)
+  Rendered shared/_gear_dropdown.html.erb (5851.2ms)
+  Rendered shared/_gear_dropdown.html.erb (5869.0ms)
+  Rendered shared/_gear_dropdown.html.erb (5878.9ms)
+  Rendered shared/_gear_dropdown.html.erb (5895.0ms)
+  Rendered shared/_gear_dropdown.html.erb (5905.9ms)
+  Rendered shared/_gear_dropdown.html.erb (5937.6ms)
+  Rendered shared/_gear_dropdown.html.erb (5949.4ms)
+  Rendered shared/_gear_dropdown.html.erb (5954.4ms)
+  Rendered shared/_gear_dropdown.html.erb (5971.7ms)
+  Rendered shared/_gear_dropdown.html.erb (5975.3ms)
+  Rendered shared/_gear_dropdown.html.erb (5980.5ms)
+  Rendered shared/_gear_dropdown.html.erb (5998.1ms)
+  Rendered shared/_gear_dropdown.html.erb (6006.0ms)
+  Rendered shared/_gear_dropdown.html.erb (6012.4ms)
+  Rendered shared/_gear_dropdown.html.erb (6042.0ms)
+  Rendered shared/_gear_dropdown.html.erb (6055.8ms)
+  Rendered shared/_gear_dropdown.html.erb (6069.0ms)
+  Rendered shared/_gear_dropdown.html.erb (6079.8ms)
+  Rendered shared/_gear_dropdown.html.erb (6105.7ms)
+  Rendered shared/_gear_dropdown.html.erb (6118.7ms)
+  Rendered shared/_gear_dropdown.html.erb (6126.4ms)
+  Rendered shared/_gear_dropdown.html.erb (6139.8ms)
+  Rendered shared/_gear_dropdown.html.erb (6145.4ms)
+  Rendered shared/_gear_dropdown.html.erb (6157.6ms)
+  Rendered shared/_gear_dropdown.html.erb (6330.8ms)
+  Rendered shared/_gear_dropdown.html.erb (6396.4ms)
+  Rendered shared/_gear_dropdown.html.erb (6433.2ms)
+  Rendered shared/_gear_dropdown.html.erb (6437.8ms)
+  Rendered shared/_gear_dropdown.html.erb (6468.0ms)
+  Rendered shared/_gear_dropdown.html.erb (6473.0ms)
+  Rendered shared/_gear_dropdown.html.erb (6477.7ms)
+  Rendered shared/_gear_dropdown.html.erb (6482.1ms)
+  Rendered shared/_gear_dropdown.html.erb (6503.6ms)
+  Rendered shared/_gear_dropdown.html.erb (6509.4ms)
+  Rendered shared/_gear_dropdown.html.erb (6525.5ms)
+  Rendered shared/_gear_dropdown.html.erb (6531.2ms)
+  Rendered shared/_gear_dropdown.html.erb (6540.3ms)
+  Rendered shared/_gear_dropdown.html.erb (6557.8ms)
+  Rendered shared/_gear_dropdown.html.erb (6619.6ms)
+  Rendered shared/_gear_dropdown.html.erb (6631.1ms)
+  Rendered shared/_gear_dropdown.html.erb (6637.2ms)
+  Rendered shared/_gear_dropdown.html.erb (6663.9ms)
+  Rendered shared/_gear_dropdown.html.erb (6674.6ms)
+  Rendered shared/_gear_dropdown.html.erb (6687.9ms)
+  Rendered shared/_gear_dropdown.html.erb (6703.2ms)
+  Rendered shared/_gear_dropdown.html.erb (6716.0ms)
+  Rendered shared/_gear_dropdown.html.erb (6733.5ms)
+  Rendered shared/_gear_dropdown.html.erb (6739.8ms)
+  Rendered shared/_gear_dropdown.html.erb (6750.6ms)
+  Rendered shared/_gear_dropdown.html.erb (6771.0ms)
+  Rendered shared/_gear_dropdown.html.erb (6783.6ms)
+  Rendered shared/_gear_dropdown.html.erb (6794.3ms)
+  Rendered shared/_gear_dropdown.html.erb (6805.0ms)
+  Rendered shared/_gear_dropdown.html.erb (6832.9ms)
+  Rendered shared/_gear_dropdown.html.erb (6855.5ms)
+  Rendered shared/_gear_dropdown.html.erb (6862.7ms)
+  Rendered shared/_gear_dropdown.html.erb (6919.2ms)
+  Rendered shared/_gear_dropdown.html.erb (6985.1ms)
+  Rendered shared/_gear_dropdown.html.erb (7018.0ms)
+  Rendered shared/_gear_dropdown.html.erb (7025.9ms)
+  Rendered shared/_gear_dropdown.html.erb (7028.8ms)
+  Rendered shared/_gear_dropdown.html.erb (7034.2ms)
+  Rendered shared/_gear_dropdown.html.erb (7038.6ms)
+  Rendered shared/_gear_dropdown.html.erb (7053.5ms)
+  Rendered shared/_gear_dropdown.html.erb (7080.4ms)
+  Rendered shared/_gear_dropdown.html.erb (7091.0ms)
+  Rendered shared/_gear_dropdown.html.erb (7101.6ms)
+  Rendered shared/_gear_dropdown.html.erb (7118.4ms)
+  Rendered shared/_gear_dropdown.html.erb (7128.2ms)
+  Rendered shared/_gear_dropdown.html.erb (7134.5ms)
+  Rendered shared/_gear_dropdown.html.erb (7173.9ms)
+  Rendered shared/_gear_dropdown.html.erb (7183.5ms)
+  Rendered shared/_gear_dropdown.html.erb (7194.0ms)
+  Rendered shared/_gear_dropdown.html.erb (7201.5ms)
+  Rendered shared/_gear_dropdown.html.erb (7241.7ms)
+  Rendered shared/_gear_dropdown.html.erb (7249.7ms)
+  Rendered shared/_gear_dropdown.html.erb (7258.7ms)
+  Rendered shared/_gear_dropdown.html.erb (7281.5ms)
+  Rendered shared/_gear_dropdown.html.erb (7295.6ms)
+  Rendered shared/_gear_dropdown.html.erb (7315.4ms)
+  Rendered shared/_gear_dropdown.html.erb (7340.5ms)
+  Rendered shared/_gear_dropdown.html.erb (7344.8ms)
+  Rendered shared/_gear_dropdown.html.erb (7348.6ms)
+  Rendered shared/_gear_dropdown.html.erb (7354.0ms)
+  Rendered shared/_gear_dropdown.html.erb (7375.0ms)
+  Rendered shared/_gear_dropdown.html.erb (7382.0ms)
+  Rendered shared/_gear_dropdown.html.erb (7387.9ms)
+  Rendered shared/_gear_dropdown.html.erb (7418.3ms)
+  Rendered shared/_gear_dropdown.html.erb (7425.0ms)
+  Rendered shared/_gear_dropdown.html.erb (7432.3ms)
+  Rendered shared/_gear_dropdown.html.erb (7456.8ms)
+  Rendered shared/_gear_dropdown.html.erb (7476.9ms)
+  Rendered shared/_gear_dropdown.html.erb (7486.1ms)
+  Rendered shared/_gear_dropdown.html.erb (7504.3ms)
+  Rendered shared/_gear_dropdown.html.erb (7521.8ms)
+  Rendered shared/_gear_dropdown.html.erb (7527.5ms)
+  Rendered shared/_gear_dropdown.html.erb (7542.2ms)
+  Rendered shared/_gear_dropdown.html.erb (7563.8ms)
+  Rendered shared/_gear_dropdown.html.erb (7578.3ms)
+  Rendered shared/_gear_dropdown.html.erb (7585.2ms)
+  Rendered shared/_gear_dropdown.html.erb (7590.8ms)
+  Rendered shared/_gear_dropdown.html.erb (7620.0ms)
+  Rendered shared/_gear_dropdown.html.erb (7640.2ms)
+  Rendered shared/_gear_dropdown.html.erb (7652.8ms)
+  Rendered shared/_gear_dropdown.html.erb (7686.8ms)
+  Rendered shared/_gear_dropdown.html.erb (7703.4ms)
+  Rendered shared/_gear_dropdown.html.erb (7727.4ms)
+  Rendered shared/_gear_dropdown.html.erb (7742.5ms)
+  Rendered shared/_gear_dropdown.html.erb (7785.8ms)
+  Rendered shared/_gear_dropdown.html.erb (7802.2ms)
+  Rendered shared/_gear_dropdown.html.erb (7899.6ms)
+  Rendered shared/_gear_dropdown.html.erb (7904.5ms)
+  Rendered shared/_gear_dropdown.html.erb (7936.5ms)
+  Rendered shared/_gear_dropdown.html.erb (7996.0ms)
+  Rendered shared/_gear_dropdown.html.erb (8019.1ms)
+  Rendered shared/_gear_dropdown.html.erb (8038.4ms)
+  Rendered shared/_gear_dropdown.html.erb (8066.3ms)
+  Rendered shared/_gear_dropdown.html.erb (8115.6ms)
+  Rendered shared/_gear_dropdown.html.erb (8181.8ms)
+  Rendered shared/_gear_dropdown.html.erb (8187.2ms)
+  Rendered shared/_gear_dropdown.html.erb (8223.4ms)
+  Rendered shared/_gear_dropdown.html.erb (8230.0ms)
+  Rendered shared/_gear_dropdown.html.erb (8236.1ms)
+  Rendered shared/_gear_dropdown.html.erb (8250.4ms)
+  Rendered shared/_gear_dropdown.html.erb (8278.5ms)
+  Rendered shared/_gear_dropdown.html.erb (8296.0ms)
+  Rendered shared/_gear_dropdown.html.erb (8340.5ms)
+  Rendered shared/_gear_dropdown.html.erb (8463.0ms)
+  Rendered shared/_gear_dropdown.html.erb (8613.0ms)
+  Rendered shared/_gear_dropdown.html.erb (8620.1ms)
+  Rendered shared/_gear_dropdown.html.erb (8635.9ms)
+  Rendered shared/_gear_dropdown.html.erb (8643.5ms)
+  Rendered shared/_gear_dropdown.html.erb (8683.4ms)
+  Rendered shared/_gear_dropdown.html.erb (8694.7ms)
+  Rendered shared/_gear_dropdown.html.erb (8725.3ms)
+  Rendered shared/_gear_dropdown.html.erb (8738.1ms)
+  Rendered shared/_gear_dropdown.html.erb (8748.1ms)
+  Rendered shared/_gear_dropdown.html.erb (8753.9ms)
+  Rendered shared/_gear_dropdown.html.erb (8758.5ms)
+  Rendered shared/_gear_dropdown.html.erb (8786.8ms)
+  Rendered shared/_gear_dropdown.html.erb (8981.3ms)
+  Rendered shared/_gear_dropdown.html.erb (8987.9ms)
+  Rendered shared/_gear_dropdown.html.erb (9210.0ms)
+  Rendered shared/_gear_dropdown.html.erb (9256.4ms)
+  Rendered shared/_gear_dropdown.html.erb (9340.1ms)
+  Rendered shared/_gear_dropdown.html.erb (9349.6ms)
+  Rendered shared/_gear_dropdown.html.erb (9372.9ms)
+  Rendered shared/_gear_dropdown.html.erb (9380.6ms)
+  Rendered shared/_gear_dropdown.html.erb (9514.4ms)
+  Rendered shared/_gear_dropdown.html.erb (9567.6ms)
+  Rendered shared/_gear_dropdown.html.erb (9578.4ms)
+  Rendered shared/_gear_dropdown.html.erb (9588.4ms)
+  Rendered shared/_gear_dropdown.html.erb (9614.9ms)
+  Rendered shared/_gear_dropdown.html.erb (9647.0ms)
+  Rendered shared/_gear_dropdown.html.erb (9656.7ms)
+  Rendered shared/_gear_dropdown.html.erb (9675.9ms)
+  Rendered shared/_gear_dropdown.html.erb (9681.3ms)
+  Rendered shared/_gear_dropdown.html.erb (9719.5ms)
+  Rendered shared/_gear_dropdown.html.erb (9725.2ms)
+  Rendered shared/_gear_dropdown.html.erb (9754.7ms)
+  Rendered shared/_gear_dropdown.html.erb (10022.9ms)
+  Rendered shared/_gear_dropdown.html.erb (10060.7ms)
+  Rendered shared/_gear_dropdown.html.erb (10096.5ms)
+  Rendered shared/_gear_dropdown.html.erb (10127.2ms)
+  Rendered shared/_gear_dropdown.html.erb (10423.3ms)
+  Rendered shared/_gear_dropdown.html.erb (10452.9ms)
+  Rendered shared/_gear_dropdown.html.erb (10461.1ms)
+  Rendered shared/_gear_dropdown.html.erb (10482.8ms)
+  Rendered shared/_gear_dropdown.html.erb (10488.2ms)
+  Rendered shared/_gear_dropdown.html.erb (10495.7ms)
+  Rendered shared/_gear_dropdown.html.erb (10521.8ms)
+  Rendered shared/_gear_dropdown.html.erb (10551.0ms)
+  Rendered shared/_gear_dropdown.html.erb (10577.2ms)
+  Rendered shared/_gear_dropdown.html.erb (10662.8ms)
+  Rendered shared/_gear_dropdown.html.erb (10864.4ms)
+  Rendered shared/_gear_dropdown.html.erb (10899.4ms)
+  Rendered shared/_gear_dropdown.html.erb (10919.5ms)
+  Rendered shared/_gear_dropdown.html.erb (11028.0ms)
+  Rendered shared/_gear_dropdown.html.erb (11035.7ms)
+  Rendered shared/_gear_dropdown.html.erb (11077.5ms)
+  Rendered shared/_gear_dropdown.html.erb (11115.9ms)
+  Rendered shared/_gear_dropdown.html.erb (11124.8ms)
+  Rendered shared/_gear_dropdown.html.erb (11138.1ms)
+  Rendered shared/_gear_dropdown.html.erb (11151.6ms)
+  Rendered shared/_gear_dropdown.html.erb (11188.9ms)
+  Rendered shared/_gear_dropdown.html.erb (11240.0ms)
+  Rendered shared/_gear_dropdown.html.erb (11244.7ms)
+  Rendered shared/_gear_dropdown.html.erb (11309.7ms)
+  Rendered shared/_gear_dropdown.html.erb (11314.9ms)
+  Rendered shared/_gear_dropdown.html.erb (11335.7ms)
+  Rendered shared/_gear_dropdown.html.erb (11341.6ms)
+  Rendered shared/_gear_dropdown.html.erb (11347.3ms)
+  Rendered shared/_gear_dropdown.html.erb (11483.3ms)
+  Rendered shared/_gear_dropdown.html.erb (11543.0ms)
+  Rendered shared/_gear_dropdown.html.erb (11568.8ms)
+  Rendered shared/_gear_dropdown.html.erb (11652.1ms)
+  Rendered shared/_gear_dropdown.html.erb (11855.3ms)
+  Rendered shared/_gear_dropdown.html.erb (11864.2ms)
+  Rendered shared/_gear_dropdown.html.erb (11871.1ms)
+  Rendered shared/_gear_dropdown.html.erb (11896.5ms)
+  Rendered shared/_gear_dropdown.html.erb (11902.5ms)
+  Rendered shared/_gear_dropdown.html.erb (11935.6ms)
+  Rendered shared/_gear_dropdown.html.erb (12099.7ms)
+  Rendered shared/_gear_dropdown.html.erb (12166.1ms)
+  Rendered shared/_gear_dropdown.html.erb (12281.3ms)
+  Rendered shared/_gear_dropdown.html.erb (12342.2ms)
+  Rendered shared/_gear_dropdown.html.erb (12437.7ms)
+  Rendered shared/_gear_dropdown.html.erb (12612.5ms)
+  Rendered shared/_gear_dropdown.html.erb (12757.1ms)
+  Rendered shared/_gear_dropdown.html.erb (12773.0ms)
+  Rendered shared/_gear_dropdown.html.erb (12802.9ms)
+  Rendered shared/_gear_dropdown.html.erb (12840.3ms)
+  Rendered shared/_gear_dropdown.html.erb (12855.5ms)
+  Rendered shared/_gear_dropdown.html.erb (13117.0ms)
+  Rendered shared/_gear_dropdown.html.erb (13122.4ms)
+  Rendered shared/_gear_dropdown.html.erb (13152.2ms)
+  Rendered shared/_gear_dropdown.html.erb (13235.9ms)
+  Rendered shared/_gear_dropdown.html.erb (13279.4ms)
+  Rendered shared/_gear_dropdown.html.erb (13323.3ms)
+  Rendered shared/_gear_dropdown.html.erb (13520.2ms)
+  Rendered shared/_gear_dropdown.html.erb (13799.4ms)
+  Rendered shared/_gear_dropdown.html.erb (13807.6ms)
+  Rendered shared/_gear_dropdown.html.erb (13842.5ms)
+  Rendered shared/_gear_dropdown.html.erb (13855.6ms)
+  Rendered shared/_gear_dropdown.html.erb (13861.0ms)
+  Rendered shared/_gear_dropdown.html.erb (13917.7ms)
+  Rendered shared/_gear_dropdown.html.erb (13976.8ms)
+  Rendered shared/_gear_dropdown.html.erb (13986.9ms)
+  Rendered shared/_gear_dropdown.html.erb (14021.4ms)
+  Rendered shared/_gear_dropdown.html.erb (14059.3ms)
+  Rendered shared/_gear_dropdown.html.erb (14069.1ms)
+  Rendered shared/_gear_dropdown.html.erb (14081.8ms)
+  Rendered shared/_gear_dropdown.html.erb (14116.3ms)
+  Rendered shared/_gear_dropdown.html.erb (14172.8ms)
+  Rendered shared/_gear_dropdown.html.erb (14248.8ms)
+  Rendered shared/_gear_dropdown.html.erb (14258.2ms)
+  Rendered shared/_gear_dropdown.html.erb (14288.4ms)
+  Rendered shared/_gear_dropdown.html.erb (14305.8ms)
+  Rendered shared/_gear_dropdown.html.erb (14320.7ms)
+  Rendered shared/_gear_dropdown.html.erb (14338.8ms)
+  Rendered shared/_gear_dropdown.html.erb (14690.1ms)
+  Rendered shared/_gear_dropdown.html.erb (14694.4ms)
+  Rendered shared/_gear_dropdown.html.erb (14709.9ms)
+  Rendered shared/_gear_dropdown.html.erb (14715.3ms)
+  Rendered shared/_gear_dropdown.html.erb (14748.0ms)
+  Rendered shared/_gear_dropdown.html.erb (14818.1ms)
+  Rendered shared/_gear_dropdown.html.erb (14885.7ms)
+  Rendered shared/_gear_dropdown.html.erb (14894.9ms)
+  Rendered shared/_gear_dropdown.html.erb (14924.8ms)
+  Rendered shared/_gear_dropdown.html.erb (14985.4ms)
+  Rendered shared/_gear_dropdown.html.erb (15127.5ms)
+  Rendered shared/_gear_dropdown.html.erb (15155.0ms)
+  Rendered shared/_gear_dropdown.html.erb (15189.9ms)
+  Rendered shared/_gear_dropdown.html.erb (15218.4ms)
+  Rendered shared/_gear_dropdown.html.erb (15234.4ms)
+  Rendered shared/_gear_dropdown.html.erb (15244.9ms)
+  Rendered shared/_gear_dropdown.html.erb (15255.1ms)
+  Rendered shared/_gear_dropdown.html.erb (15260.6ms)
+  Rendered shared/_gear_dropdown.html.erb (15657.4ms)
+  Rendered shared/_gear_dropdown.html.erb (15697.7ms)
+  Rendered shared/_gear_dropdown.html.erb (15705.0ms)
+  Rendered shared/_gear_dropdown.html.erb (15712.0ms)
+  Rendered shared/_gear_dropdown.html.erb (15736.2ms)
+  Rendered shared/_gear_dropdown.html.erb (15742.1ms)
+  Rendered shared/_gear_dropdown.html.erb (15750.7ms)
+  Rendered shared/_gear_dropdown.html.erb (15762.0ms)
+  Rendered shared/_gear_dropdown.html.erb (16070.2ms)
+  Rendered shared/_gear_dropdown.html.erb (16119.8ms)
+  Rendered shared/_gear_dropdown.html.erb (16151.0ms)
+  Rendered shared/_gear_dropdown.html.erb (16167.8ms)
+  Rendered shared/_gear_dropdown.html.erb (16171.0ms)
+  Rendered shared/_gear_dropdown.html.erb (16182.6ms)
+  Rendered shared/_gear_dropdown.html.erb (16192.8ms)
+  Rendered shared/_gear_dropdown.html.erb (16204.3ms)
+  Rendered shared/_gear_dropdown.html.erb (16221.4ms)
+  Rendered shared/_gear_dropdown.html.erb (16228.2ms)
+  Rendered shared/_gear_dropdown.html.erb (16243.9ms)
+  Rendered shared/_gear_dropdown.html.erb (16270.0ms)
+  Rendered shared/_gear_dropdown.html.erb (16278.0ms)
+  Rendered shared/_gear_dropdown.html.erb (16284.6ms)
+  Rendered shared/_gear_dropdown.html.erb (16288.5ms)
+  Rendered shared/_gear_dropdown.html.erb (16298.4ms)
+  Rendered shared/_gear_dropdown.html.erb (16353.3ms)
+  Rendered shared/_gear_dropdown.html.erb (16359.6ms)
+  Rendered shared/_gear_dropdown.html.erb (16363.8ms)
+  Rendered shared/_gear_dropdown.html.erb (16387.5ms)
+  Rendered shared/_gear_dropdown.html.erb (16392.0ms)
+  Rendered shared/_gear_dropdown.html.erb (16397.3ms)
+  Rendered shared/_gear_dropdown.html.erb (16422.0ms)
+  Rendered shared/_gear_dropdown.html.erb (16442.0ms)
+  Rendered shared/_gear_dropdown.html.erb (16446.9ms)
+  Rendered shared/_gear_dropdown.html.erb (16484.4ms)
+  Rendered shared/_gear_dropdown.html.erb (16503.4ms)
+  Rendered shared/_gear_dropdown.html.erb (16513.0ms)
+  Rendered shared/_gear_dropdown.html.erb (16520.2ms)
+  Rendered shared/_gear_dropdown.html.erb (16538.2ms)
+  Rendered shared/_gear_dropdown.html.erb (16599.3ms)
+  Rendered shared/_gear_dropdown.html.erb (16675.1ms)
+  Rendered shared/_gear_dropdown.html.erb (16681.5ms)
+  Rendered shared/_gear_dropdown.html.erb (16694.9ms)
+  Rendered shared/_gear_dropdown.html.erb (16705.3ms)
+  Rendered shared/_gear_dropdown.html.erb (16861.5ms)
+  Rendered shared/_gear_dropdown.html.erb (16871.7ms)
+  Rendered shared/_gear_dropdown.html.erb (16884.2ms)
+  Rendered shared/_gear_dropdown.html.erb (16894.9ms)
+  Rendered shared/_gear_dropdown.html.erb (16918.1ms)
+  Rendered shared/_gear_dropdown.html.erb (16925.4ms)
+  Rendered shared/_gear_dropdown.html.erb (16933.0ms)
+  Rendered shared/_main_nav.html.erb (16937.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (16942.9ms)
+Completed 500 Internal Server Error in 16972ms (ActiveRecord: 0.0ms)
+
+
+
+SystemStackError - stack level too deep:
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_gear_dropdown.html.erb:3:in `_app_views_shared__gear_dropdown_html_erb__1076059016105718002_70308299640060'
+  app/views/shared/_main_nav.html.erb:25:in `_app_views_shared__main_nav_html_erb__4113488225343930988_70308354942640'
+  app/views/static_pages/index.html.erb:1:in `_app_views_static_pages_index_html_erb__3290328721970365453_70308354975220'
+
+Started POST "/__better_errors/d9f323235b5b40ae/variables" for ::1 at 2021-08-19 17:56:29 -0700
+Started GET "/" for ::1 at 2021-08-19 17:57:08 -0700
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_gear_dropdown.html.erb (0.7ms)
+  Rendered shared/_gear_dropdown.html.erb (22.9ms)
+  Rendered shared/_gear_dropdown.html.erb (40.9ms)
+  Rendered shared/_gear_dropdown.html.erb (250.3ms)
+  Rendered shared/_gear_dropdown.html.erb (265.6ms)
+  Rendered shared/_gear_dropdown.html.erb (276.7ms)
+  Rendered shared/_gear_dropdown.html.erb (295.1ms)
+  Rendered shared/_gear_dropdown.html.erb (304.0ms)
+  Rendered shared/_gear_dropdown.html.erb (319.1ms)
+  Rendered shared/_gear_dropdown.html.erb (357.7ms)
+  Rendered shared/_gear_dropdown.html.erb (373.3ms)
+  Rendered shared/_gear_dropdown.html.erb (584.7ms)
+  Rendered shared/_gear_dropdown.html.erb (596.8ms)
+  Rendered shared/_gear_dropdown.html.erb (635.3ms)
+  Rendered shared/_gear_dropdown.html.erb (674.5ms)
+  Rendered shared/_gear_dropdown.html.erb (782.5ms)
+  Rendered shared/_gear_dropdown.html.erb (801.3ms)
+  Rendered shared/_gear_dropdown.html.erb (827.8ms)
+  Rendered shared/_gear_dropdown.html.erb (898.7ms)
+  Rendered shared/_gear_dropdown.html.erb (1120.5ms)
+  Rendered shared/_gear_dropdown.html.erb (1221.3ms)
+  Rendered shared/_gear_dropdown.html.erb (1264.1ms)
+  Rendered shared/_gear_dropdown.html.erb (1273.4ms)
+  Rendered shared/_gear_dropdown.html.erb (1296.6ms)
+  Rendered shared/_gear_dropdown.html.erb (1332.3ms)
+  Rendered shared/_main_nav.html.erb (1434.1ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (0.6ms)
+  Rendered shared/_search_modal.html.erb (0.8ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (1709.1ms)
+Completed 200 OK in 1972ms (Views: 1961.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2021-08-19 17:57:13 -0700
+Started GET "/assets/application.self-ac3e926ff51e31c01a7e0d56e2e0a0b2bd8323d488a3e48d055ebb6e0c34c713.css?body=1&livereload=1629421167536" for ::1 at 2021-08-19 17:59:27 -0700
+Started GET "/assets/application.self-ac3e926ff51e31c01a7e0d56e2e0a0b2bd8323d488a3e48d055ebb6e0c34c713.css?body=1&livereload=1629421167539" for ::1 at 2021-08-19 17:59:27 -0700

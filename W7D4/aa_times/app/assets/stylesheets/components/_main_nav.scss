@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
+  padding-bottom: 5px;
 }
 
 .left-nav > ul,
@@ -32,10 +33,10 @@
     }
 
     > li:last-of-type {
-  
+
     }
   }
-  
+
   i {
 
   }

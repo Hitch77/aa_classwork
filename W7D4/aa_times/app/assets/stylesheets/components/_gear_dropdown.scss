@@ -8,7 +8,21 @@
 	text-align: center;
 }
 
-#gear_dropdown:hover{
+#gear-dropdown:hover{
     background-color: #999;
     border-radius: 3px;
+
+}
+
+li {
+	position: relative;
+}
+
+.gear-dropdown {
+	position: absolute;
+	display: none;
+}
+
+.gear-dropdown:hover {
+	display: block;
 }
