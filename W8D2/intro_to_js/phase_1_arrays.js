@@ -37,5 +37,3 @@ Array.prototype.transpose = function () {
     return array
 }
 
-new_array = [[1, 2], [3, 4], [5, 6]]
-new_array_t = [[1, 3, 5], [2, 4, 6]]
