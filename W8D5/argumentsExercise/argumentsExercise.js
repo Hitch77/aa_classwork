@@ -78,3 +78,25 @@ notMarkovSays("meow", "me");
 // Pavlov says meow to me!
 // true
 
+function curriedSum(numArgs){
+    let numbers = [];
+    let sum = 0;
+    return function _singleSum(num1){
+        numbers.push(num1)
+        sum += num1
+        if (numArgs === numbers.length){
+            // console.log (numbers.reduce((a, b) => a + b));
+            return sum;
+        }else{
+            console.log(sum);
+        };
+        return _singleSum;
+    }
+}
+
+const sum1 = curriedSum(3);
+console.log(sum1(5)(30)(20));
+console.log(curriedSum(4))
+
+
+
