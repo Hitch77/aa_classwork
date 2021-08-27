@@ -1,0 +1,59 @@
+function binarySearch(arr, target){
+    if (arr.length === 0){
+        return -1
+    }
+
+    let mid = Math.floor(arr.length/2)
+
+    if (arr[mid] === target) {
+        return mid
+    } else if (arr[mid] > target) {
+        let left = arr.slice(0, mid)
+        return binarySearch(left, target);
+    } else if (arr[mid] < target) {
+        let right = arr.slice(mid+1)
+        let searchResult = binarySearch(right, target)
+        return (searchResult === -1) ? -1 : searchResult + mid + 1
+    }
+}
+let array = [2, 3, 1, 9, 5, 3, 7, 8, 4]
+console.log(binarySearch(array, 4))
+
+// function(arr, target, callback){
+
+//     if (arr[mid] === target) {
+//         return mid;
+//     } else if (arr[mid] > target) {
+
+// //     }
+
+
+// console.log(myArr.myBinarySearch((num, target) =>  {
+//     if (num === target){
+//         return true
+//     };
+//     return false;
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function mergeSorte(arr, callback) {
+    // use arr.methodName
+}
