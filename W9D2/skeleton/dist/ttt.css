@@ -1,0 +1,35 @@
+ul {
+    list-style: none;
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    /* border: black 2px solid; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px
+}
+
+li {
+    width: 90px;
+    height: 90px;
+    border: black 2px solid;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    background-color: gray;
+}
+
+li:hover {
+     background-color: yellow;
+}
+
+/* ul {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+li {
+  padding: 10px;
+  background-color: #ccc;
+} */
+
