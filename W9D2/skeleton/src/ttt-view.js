@@ -16,7 +16,6 @@ class View {
         ul.appendChild(li)
       }
     }
-    
     this.el.appendChild(ul)
     console.log(ul)
 
@@ -38,7 +37,21 @@ class View {
 
   makeMove(square) {
     let pos = square.dataset.pos.split(",").map(x=>+x)
+    let currentPlayer= this.game.currentPlayer;
     this.game.playMove(pos)
+    square.innerText= currentPlayer;
+    square.style.backgroundColor = "white";
+    if (square.innerText === 'X'){
+      square.style.color= 'red';
+    } else {
+      square.style.color= 'blue';
+    }
+    let winner= this.game.winner();
+    if (winner=== 'X') {
+      setTimeout(() => { alert("Player X is the winner"); location.reload();},0)
+    } else if (winner=== 'O') {
+      setTimeout(() => { alert("Player O is the winner"); location.reload();},0)
+    }
   }
 
 }
