@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>react-redux</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h2 id="react-redux">React-Redux</h2>
+<ul>
+<li>library or package for connectingh react and redux</li>
+</ul>
+<ul>
+<li>import _______ from ‘react-redux’</li>
+</ul>
+<ul>
+<li>accomplishes this in 2 ways
+<ul>
+<li>allows the threading of redux state as props to components</li>
+<li>allows threading of functions that can update redux state to components</li>
+</ul>
+</li>
+</ul>
+<h2 id="getting-the-state-to-components">Getting the state to components</h2>
+<ul>
+<li>Provider
+<ul>
+<li>takes in store as a prop</li>
+<li>provides the store to the component hierarchy</li>
+</ul>
+</li>
+<li>connect
+<ul>
+<li>connect given component to a specific part of store (specific slices of state/actions to dispatch)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<pre><code>&lt; Provider store={store}&gt;
+	&lt; App store={store}/&gt;
+&lt; /Provider&gt;
+</code></pre>
+</blockquote>
+<pre><code>import { connect } from "react-redux" 
+// connect( callbacks, callback ) // returns a function to us, which accepts a component. The component is the component we want to give the store to. "The subscription"
+connect (callbacks,callback)(TeaIndex)
+</code></pre>
+<h2 id="components--containers">Components / Containers</h2>
+<ul>
+<li>connect connects react and redux!
+<ul>
+<li>it takes msp (map state to props) and mdp (map dispatch to props) and returns a function that needs a component as an argument. When it is invoked it will feed the specified props to that component</li>
+</ul>
+</li>
+<li>the purpose of msp and mdp (what they are for)</li>
+</ul>
+<blockquote></blockquote>
+<pre><code> import { connect } from 'react-redux';
+ import { receivedTea } from "./actions/teaActions"
+ const mapStateToProps = (state) =&gt;{  // we specify what we're sending as props
+    return {
+        stocks: Object.values(state.entities.stocks) // to get an array of stocks
+    }
+ } 
+ const mapDispatchToProps = (dispatch) =&gt;{ // we specify what we're sending to component as props here
+    return {
+        receivedTea: (tea) =&gt; { dispatch( receivedTea( tea ) ) } // we can do onClick = this.props.receivedTea({flavor: "green", amount "5.99"}) on TeaIndex
+    }
+ }
+    
+    
+ connect(mapStateToProps, mapDispatchToProps)(TeaIndex)
+</code></pre>
+<h2 id="the-redux-cycle">The Redux cycle</h2>
+<ul>
+<li>containers subscribe to changes on certain slices of state
+<ul>
+<li>this is dictated by what we put in the mapStateToProps</li>
+<li>react’s diffing algorithm recognizes when it is given new props and re-renders accordingly
+<ul>
+<li>note that react is what is responsible for re-renders</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>an action hits all of the reducers</li>
+</ul>
+<h2 id="demo">Demo!</h2>
+<p>in frontend/tea_shop.js  // entry file</p>
+<pre><code>import configureStore from './store/store'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Root from './componets/Root'
+
+document.addEventListener("DomContentLoaded", () =&gt; {
+    const root = documentGetElementById('root')
+    
+    const preLoadedState = { // preLoadedState for testing purposes
+	    teas: {
+		    1: {
+			    flavor: "Green",
+			    amount: 5.99,
+			    id: 1
+			},
+			2: {
+				flavor: "Black",
+				amount: 10.99,
+				id: 2
+			}
+		}
+	}
+    
+    const store = configureStore(preLoadedState); // preLoadedState for testing purposes
+    window.store = store;
+    
+	ReactDOM.render(&lt;Root store={ store }/&gt;, root)
+})
+</code></pre>
+<p>in frontend/components/Root.jsx</p>
+<pre><code>import React from 'react'
+import { Provider } from 'react-redux'
+import App from './App'
+
+const Root = (props) =&gt; { // can also do ({store}) instead of (props) - destructuring
+    return (
+	    &lt;Provider store={ props.store } &gt; // if you do ({store}), you can also just do {store} here
+		    &lt;App /&gt;
+		&lt;/Provider&gt;
+    )
+}
+export default Root;
+</code></pre>
+<p>in frontend/components/App.jsx</p>
+<pre><code>import React from 'react'
+//import TeaIndex from './TeaIndex' // WRONG don't wanna import component if it has a container
+import TeasIndexContainer from './TeaIndexContainer'
+
+const App = () =&gt; {
+	return (
+		&lt;div&gt;
+    		&lt;TeaIndexContainer /&gt;
+		&lt;/div&gt;
+    )
+}
+export default App;
+</code></pre>
+<p>in frontend/components/TeaIndex.jsx</p>
+<pre><code>import React from 'react'
+import TeaForm from './TeaForm'
+
+const TeaIndex = (props) =&gt; {
+    return (
+	    &lt;div&gt;
+		    &lt;h1&gt;These are all the teas...&lt;/h1&gt;
+		    &lt;ul&gt;
+			    { props.teas.map( (tea,i) =&gt; {
+				    &lt;li key={i}&gt;{tea}&lt;/li&gt;
+			    } ) }
+		    &lt;/ul&gt;
+		    &lt;h2&gt;Tea Form&lt;/h2&gt;
+		    &lt;Tea Form receivedTea={props.receivedTea}/&gt;
+	    &lt;/div&gt;
+    )
+}
+export default TeaIndex;
+</code></pre>
+<p>in frontend/compoents/TeaIndexContainer.jsx</p>
+<pre><code>import { connect } from 'react-redux';
+import TeaIndex from './TeaIndex';
+import { receivedTea } from '../actions/teaActions.js'
+
+const mapStateToProps = (state) =&gt; { // references application state
+    return {
+	    teas: Object.values(state.teas) // the key is the name of the prop we pass to TeaIndex-
+    }
+}
+const mapDispatchToProps = (dispatch) =&gt;{
+    return {
+	    receivedTea: (tea) =&gt; dispatch( receivedTea( tea ) )
+    }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(TeaIndex) // returns a container with the component and the state connected. 
+</code></pre>
+<p>in frontend/components/TeaForm.jsx</p>
+<pre><code>import React from 'react'
+
+class TeaForm extends React.Component {
+    constructor(props){
+	    super(props);
+	    this.state = {
+		    id: Math.floor(Math.random() * 1000), // you'd usually have this from the backend, this is just for testing
+		    flavor: "",
+		    amount: "",
+	    };
+	    this.updateFlavor = this.updateFlavor.bind(this)
+	    this.updateAmount = this.updateAmount.bind(this)
+	    this.handleSubmit = this.handleSubmit.bind(this)
+	}
+	
+	updateFlavor(e){
+		this.setState({ flavor: e.target.value})
+	}
+	
+	updateAmount(e){
+		this.setState({ amount: e.target.value})
+	}
+
+	handleSubmit(e){
+		e.preventDefault(); // stops page refresh/ firing off request
+		this.props.receivedTea(this.state)
+	}
+	render(){
+		return (
+			&lt;form onSubmit={this.handleSubmit}&gt;
+				&lt;h2&gt;Here you can add a Tea&lt;/h2&gt;
+				&lt;label&gt;Flavor:
+					&lt;input type="text" value={this.state.flavor}/&gt;
+				&lt;/label&gt;
+				&lt;label&gt;Amount:
+					&lt;input type="text" value={this.state.amount} onChange={ this.updateFlavor }/&gt;
+				&lt;/label&gt;
+				&lt;button&gt;Add a Tea!&lt;/button&gt;
+			&lt;/form&gt;
+		)
+	}
+}
+export default TeaForm
+</code></pre>
+<h2 id="future-state-shape">Future State Shape</h2>
+<pre><code>entities: {
+    teas: {
+	    1: {},
+	    2: {}
+	}
+},
+users: {
+},
+watches: {
+},
+ui: {
+	loading:true/false
+}, 
+errors: {
+	login: ['incorrect username/password],
+	
+},
+session: { currentUserId: 1}
+</code></pre>
+</div>
+</body>
+
+</html>
