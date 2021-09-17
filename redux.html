@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>redux</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h2 id="redux">Redux</h2>
+<p>the most popular implementation of Flux</p>
+<p>3 parts of the redux pattern</p>
+<ol>
+<li>store</li>
+<li>reducers</li>
+<li>actions</li>
+</ol>
+<h2 id="application-state">application state</h2>
+<ul>
+<li>all the info that is displyed and/or available to display on the frontend of an application</li>
+<li>when a change is made to an application resource (i.e. CREATE, UPDATE, or DESTROY) the change is persisted to the database on the back-end and updated in state of the front-end</li>
+</ul>
+<h2 id="why-use-application-state">why use application state?</h2>
+<ul>
+<li>minimize api calls to our backend</li>
+<li>changes on the webpage that don’t need to be saved to the database</li>
+<li>rendering speed avantage</li>
+</ul>
+<h2 id="flux">Flux</h2>
+<ul>
+<li>frontend application architecture</li>
+<li>unidirectional data flow</li>
+<li>store manages the global state of an application, and can only be changed via dispatched actions</li>
+<li>note: flux is not specific to react</li>
+</ul>
+<h2 id="redux-1">Redux</h2>
+<ul>
+<li>the most popular implementation of the Flux architecture</li>
+<li>application state represented as one giant POJO</li>
+<li>powerful because of its restrictions</li>
+</ul>
+<h2 id="redux-principles">Redux Principles</h2>
+<ul>
+<li>single Source of Truth (application state)</li>
+<li>State is read-only</li>
+<li>Changes are made with pure functions (reducers)</li>
+</ul>
+<h2 id="sample-state-shape">Sample State Shape</h2>
+<pre><code>{
+	stocks: {
+		1: {
+			id: 1,
+			name: "starbucks",
+			ticker: "SBUX",
+			price: 31.96
+			},
+		2: {
+			id: 2,
+			name: "twitter",
+			ticker: "TWTR",
+			price: 31.96"
+			}
+		},
+	users: {
+		1: {
+			},
+		2: {
+			}
+		}
+	}
+}
+</code></pre>
+<h2 id="file-structure">File Structure</h2>
+<ul>
+<li>nest entire react app under frontend folder
+<ul>
+<li>setup entry file inside</li>
+<li>same structure that we learned on tuesday with a few new folders
+<ul>
+<li>components</li>
+<li>actions</li>
+<li>reducers</li>
+<li>store</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="store">Store</h2>
+<ul>
+<li>Object managing the state of the application</li>
+<li>with Redux, we only have one store (other Flux implementations have multiple)</li>
+<li>use createStore(RootReducer, [preloadedState], [enhacer]) to build store object
+<ul>
+<li>we learn about enhacers next week</li>
+</ul>
+</li>
+</ul>
+<p>/frontend/store/store.js</p>
+<pre><code>import { createStore } from "redux";
+// import teasReducer from "../reducers/teasReducer";
+import rootReducer from "../reducers/rootReducer"
+// const configureStore = (preloadedState = {}) =&gt; { 	
+//     return createStore( () =&gt; ({}), preloadedState ) 
+// } 
+// ^^ w/o reducer
+// vv w/ reducer
+const configureStore = (preloadedState = {}) =&gt; { 	
+//     return createStore( teasReducer, preloadedState ) // example with one reducer 
+    return createStore( rootReducer, preloadedState ) // when you have multiple reducers
+} 
+export default configureStore
+</code></pre>
+<p>in entry file:</p>
+<pre><code>import configureStore from "./store/store"
+import {receivedtea} from "./actions/teaActions"
+document.addEventListener("DOMContentLoaded", () =&gt; {
+	const store = configureStore();	
+	window.store = store; // so you can see it in the console.
+	window.teaAction = receivedTea
+}
+</code></pre>
+<h2 id="action-creators">Action Creators</h2>
+<ul>
+<li>functions that return an action
+<ul>
+<li>an action is an object that has a type property</li>
+<li>may also carry a payload</li>
+</ul>
+</li>
+<li>Use action creators to dynamically determine the payload
+<ul>
+<li>abstract this logic out of components</li>
+</ul>
+</li>
+<li>Use constants for all ‘type’ values</li>
+</ul>
+<p>frontend/actions/teaAction.js</p>
+<pre><code>export const RECEIVED_TEA = "RECEIVED_TEA" // export to use in teas reducer
+const receivedGreenTea = {
+	type: "RECEIVED_TEA", // can name this whatever, but should be this format
+	tea: {
+		flavor: "green",
+		amount: 5.99,
+		id: 1
+	}
+}
+^^ what it looks like ultimately
+export const receivedTea = (tea) =&gt; {
+    return {
+	    type: RECEIVED_TEA,
+	    tea: tea // can also just do tea because k v are the same
+    }
+}
+^^ much for dynamic way of writing it
+</code></pre>
+<h2 id="reducers">Reducers</h2>
+<ul>
+<li>pure functions that update state based on the action’s type</li>
+<li>returns either a new object with the updated state or the same state object ( if it didn’t find a matching case)</li>
+<li>RootReducer combines multiple reducers into one using combineReducers
+<ul>
+<li>each reducer receives every dispatched action, but only deals with it’s own slice of state</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>.dispatch sends the action/oldState to the reducer</li>
+</ul>
+<p>frontend/reducers/teasReducer.js</p>
+<pre><code>import {RECEIVED_TEA} from "../actions/teaActions.js" // do this so you can actually get an error if misspelled
+const teasReducer = (oldState = {}, action) =&gt; {
+	Object.freeze(oldState); // .freeze is a javascript function that makes it near impossible to mutate oldState
+	const newState = Object.assign({}, oldState) // .assign(newObject a.k.a. target, what we're pulling from)
+	switch (action.type) {
+    	case RECEIVED_TEA:
+	    	newState[action.tea.id] = action.tea
+			return newState
+		default:
+			return oldState
+	}
+}
+export default teasReducer
+</code></pre>
+<p>frontend/reducers/rootReducers.js</p>
+<pre><code>import { combineReducers } from "redux";
+import teasReducer from "./teasReducer"
+import usersReducer from "./usersReducer" // just an example
+const rootReducer = combineReducers({
+   teas: teasReducer,
+   users: usersReducer // just an example
+})
+export default rootReducers;
+</code></pre>
+<h2 id="when-is-redux-a-good-idea">When is redux a good idea?</h2>
+<ul>
+<li>your data changes over time</li>
+<li>you want to cache data in memory, but it can change while cached</li>
+<li>your data is relational and models include and depend on each other</li>
+<li>the same data is assembled from different sources and can be rendered in several places through the UI.</li>
+</ul>
+<h2 id="trade-offs-for-redux">trade-offs for redux</h2>
+<ul>
+<li>pros
+<ul>
+<li>makes it easy to reason about complex data and UI changes</li>
+<li>complements react well</li>
+</ul>
+</li>
+<li>cons
+<ul>
+<li>boilerplate code</li>
+</ul>
+</li>
+</ul>
+</div>
+</body>
+
+</html>
